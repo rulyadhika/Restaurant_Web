@@ -34,12 +34,21 @@ function filterData(data) {
 }
 
 function displayData(data) {
-  return ` <div class="col-md-4">
+  return ` <div class="col-md-4 pl-2 pr-2">
                 <div class="card my-2">
-                <img src="${data.gambar}" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
+                <img src="${
+                  data.gambar
+                }" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body menu-card-info">
                         <h5 class="card-title">${data.nama}</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <ul>
+                            <li>Harga : Rp. ${data.harga}</li>
+                            <li>${
+                              data.deskripsi.length > 120
+                                ? `${data.deskripsi.substring(0, 117) + "..."}`
+                                : `${data.deskripsi}`
+                            }</li>
+                        </ul>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>

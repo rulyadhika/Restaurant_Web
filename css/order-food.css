@@ -9,7 +9,17 @@
   padding: 100px 20px;
 }
 
+.main-row {
+  width: 100%;
+  margin: 0 !important;
+}
+
 .checkout-main-box {
   height: fit-content;
   border: 1px solid black;
+}
+
+.menu-card-info ul li {
+  list-style-type: none;
+  text-align: justify;
 }
