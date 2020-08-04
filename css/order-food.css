@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content-container {
+  width: 100%;
+  padding: 100px 20px;
+}
+
+.checkout-main-box {
+  height: fit-content;
+  border: 1px solid black;
+}

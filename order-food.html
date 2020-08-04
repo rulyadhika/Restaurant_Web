@@ -26,6 +26,101 @@
     <title>Restaurant - Order Food</title>
   </head>
   <body>
+    <div class="main-container">
+      <div class="content-container">
+        <div class="row">
+          <div class="col-lg-8 menu-main-box">
+            <div class="accordion" id="accordionFoodMenu">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Makanan Pembuka
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse show"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionFoodMenu"
+                >
+                  <div class="card-body">
+                    <div class="row makanan-pembuka-box"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Makanan Utama
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordionFoodMenu"
+                >
+                  <div class="card-body">
+                    <div class="row makanan-utama-box"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Makanan Penutup
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordionFoodMenu"
+                >
+                  <div class="card-body">
+                    <div class="row makanan-penutup-box"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 checkout-main-box">
+            <div class="row checkout-title">
+              <div class="col">Checkout</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <script src="js/order-food.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
