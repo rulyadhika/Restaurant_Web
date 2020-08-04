@@ -1,0 +1,79 @@
+[
+  {
+    "nama": "Mendoan",
+    "harga": "25000",
+    "kategori": "makanan-pembuka",
+    "gambar": "1.jpg",
+    "id": "aptz-1"
+  },
+  {
+    "nama": "Gorengan yahut",
+    "harga": "23000",
+    "kategori": "makanan-pembuka",
+    "gambar": "1.jpg",
+    "id": "aptz-2"
+  },
+  {
+    "nama": "Risol",
+    "harga": "21000",
+    "kategori": "makanan-pembuka",
+    "gambar": "1.jpg",
+    "id": "aptz-3"
+  },
+  {
+    "nama": "Rendang",
+    "harga": "22000",
+    "kategori": "makanan-utama",
+    "gambar": "1.jpg",
+    "id": "mm-1"
+  },
+  {
+    "nama": "Bistik",
+    "harga": "20000",
+    "kategori": "makanan-utama",
+    "gambar": "1.jpg",
+    "id": "mm-2"
+  },
+  {
+    "nama": "Satai Kambing",
+    "harga": "25000",
+    "kategori": "makanan-utama",
+    "gambar": "1.jpg",
+    "id": "mm-3"
+  },
+  {
+    "nama": "Shriaptz",
+    "harga": "15000",
+    "kategori": "makanan-utama",
+    "gambar": "1.jpg",
+    "id": "mm-4"
+  },
+  {
+    "nama": "Strawberry Shortcake",
+    "harga": "15000",
+    "kategori": "makanan-penutup",
+    "gambar": "1.jpg",
+    "id": "dsrt-1"
+  },
+  {
+    "nama": "Ice Cream",
+    "harga": "15000",
+    "kategori": "makanan-penutup",
+    "gambar": "1.jpg",
+    "id": "dsrt-2"
+  },
+  {
+    "nama": "Black Forest Cake",
+    "harga": "15000",
+    "kategori": "makanan-penutup",
+    "gambar": "1.jpg",
+    "id": "dsrt-3"
+  },
+  {
+    "nama": "Gulai",
+    "harga": "25000",
+    "kategori": "makanan-utama",
+    "gambar": "1.jpg",
+    "id": "mm-5"
+  }
+]
