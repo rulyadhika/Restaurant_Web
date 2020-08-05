@@ -36,7 +36,7 @@ function filterData(data) {
 function displayData(data) {
   return ` <div class="col-md-4 pl-2 pr-2">
                 <div class="card my-2 menu-card-box">
-                <img src="${data.gambar}" class="card-img-top" alt="...">
+                  <img src="${data.gambar}" class="card-img-top" alt="...">
                     <div class="card-body menu-card-info">
                         <h5 class="card-title">${data.nama}</h5>
                         <ul>
@@ -55,10 +55,24 @@ function displayData(data) {
                             }</li>
                         </ul>
                         <div class="card-button-wrap">
-                          <button type="button" class="btn btn-outline-dark btn-sm more-detail-btn">More Detail</button>
-                          <button class="btn btn-warning btn-sm text-white add-to-cart-btn">Add To Cart</button>
+                          <button type="button" class="btn btn-outline-dark btn-sm more-detail-btn" data-id="${
+                            data.id
+                          }" data-toggle="modal" data-target="#foodDetails">More Detail</button>
+                          <button class="btn btn-warning btn-sm text-white add-to-cart-btn" data-id="${
+                            data.id
+                          }">Add To Cart</button>
                         </div>
                     </div>
                 </div>
             </div>`;
 }
+
+const menuCardBox = document.querySelector(".menu-card-box");
+
+document.addEventListener("click", function (el) {
+  const target = el.target;
+  if (target.classList.contains("menu-card-box")) {
+    const moreDetailBtnLoc = target.children[1].children[2].children[0];
+    moreDetailBtnLoc.click();
+  }
+});
