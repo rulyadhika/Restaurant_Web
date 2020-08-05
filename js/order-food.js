@@ -54,7 +54,10 @@ function displayData(data) {
                                 : `${data.deskripsi}`
                             }</li>
                         </ul>
-                        <button class="btn btn-primary add-to-cart-btn">Add To Cart</button>
+                        <div class="card-button-wrap">
+                          <button type="button" class="btn btn-outline-dark btn-sm more-detail-btn">More Detail</button>
+                          <button class="btn btn-warning btn-sm text-white add-to-cart-btn">Add To Cart</button>
+                        </div>
                     </div>
                 </div>
             </div>`;
