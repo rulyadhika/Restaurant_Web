@@ -21,5 +21,74 @@
 
 .menu-card-info ul li {
   list-style-type: none;
-  text-align: justify;
+}
+
+.descForLessThan768px {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .content-container {
+    padding: 100px 0px;
+  }
+
+  .menu-main-box {
+    padding: 5px !important;
+  }
+
+  .menu-card-box {
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  .menu-card-box img {
+    width: 50%;
+    object-fit: contain;
+    max-width: 150px;
+  }
+
+  .menu-card-info {
+    padding: 10px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menu-card-info,
+  .menu-card-info .card-title {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .menu-card-info ul {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .menu-card-info ul li:first-child {
+    margin-bottom: 5px;
+  }
+
+  .priceTitle {
+    display: none;
+  }
+
+  .descForMoreThan768px {
+    display: none;
+  }
+
+  .descForLessThan768px {
+    display: block;
+  }
+
+  .add-to-cart-btn {
+    display: none !important;
+  }
+}
+
+/* for galaxy fold and etc */
+@media only screen and (max-width: 350px) {
+  .menu-card-box img {
+    object-fit: cover;
+  }
 }
