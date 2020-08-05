@@ -80,7 +80,6 @@ document.addEventListener("click", async function (el) {
 });
 
 function showFoodDetail(data, id) {
-  console.log(id);
   const foodDetailData = data
     .filter((data) => data.id == id)
     .map(
