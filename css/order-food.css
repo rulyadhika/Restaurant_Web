@@ -40,7 +40,8 @@
   margin: 3px 0 5px 0;
 }
 
-.priceTitle {
+.priceTitle,
+.modalTitle {
   font-weight: bold;
 }
 

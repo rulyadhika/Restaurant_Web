@@ -135,10 +135,10 @@
       aria-labelledby="foodDetailsLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="foodDetailsLabel">Modal title</h5>
+            <h5 class="modal-title" id="foodDetailsLabel">Food Detail</h5>
             <button
               type="button"
               class="close"
@@ -148,9 +148,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            ...
-          </div>
+          <div class="modal-body food-detail-modal-body"></div>
           <div class="modal-footer">
             <button
               type="button"
@@ -159,7 +157,11 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button
+              class="btn btn-warning text-white add-to-cart-btn modal-add-to-cart-btn"
+            >
+              Add To Cart
+            </button>
           </div>
         </div>
       </div>

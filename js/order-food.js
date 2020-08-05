@@ -67,12 +67,42 @@ function displayData(data) {
             </div>`;
 }
 
-const menuCardBox = document.querySelector(".menu-card-box");
-
-document.addEventListener("click", function (el) {
+document.addEventListener("click", async function (el) {
   const target = el.target;
   if (target.classList.contains("menu-card-box")) {
     const moreDetailBtnLoc = target.children[1].children[2].children[0];
     moreDetailBtnLoc.click();
+  } else if (target.classList.contains("more-detail-btn")) {
+    const getFoodData = await reqData();
+    const foodId = target.dataset.id;
+    showFoodDetail(getFoodData, foodId);
   }
 });
+
+function showFoodDetail(data, id) {
+  console.log(id);
+  const foodDetailData = data
+    .filter((data) => data.id == id)
+    .map(
+      (data) => `<div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img src="${data.gambar}" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-8">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item"><span class="modalTitle">${data.nama}</span></li>
+                          <li class="list-group-item"><span class="modalTitle">Harga : </span>Rp. ${data.harga}</li>
+                          <li class="list-group-item"><span class="modalTitle">Deskripsi Makanan : </span> <br/> ${data.deskripsi}</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+    `
+    )
+    .join("");
+  const foodDetailModalBody = document.querySelector(".food-detail-modal-body");
+  const modalAddToCartBtn = document.querySelector(".modal-add-to-cart-btn");
+  foodDetailModalBody.innerHTML = foodDetailData;
+  modalAddToCartBtn.dataset.id = id;
+}
