@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .content-container {
@@ -41,7 +42,8 @@
 }
 
 .priceTitle,
-.modalTitle {
+.customTitle,
+.card-title {
   font-weight: bold;
 }
 
@@ -52,6 +54,48 @@
 .card-button-wrap button {
   width: 100%;
   margin: 3px;
+  font-size: 12px;
+}
+
+.menu-card-at-cart-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row !important;
+}
+
+.menu-card-info-for-cart .customTitle {
+  font-size: 16px;
+}
+
+.menu-card-at-cart-box img {
+  width: 25%;
+  object-fit: cover;
+  max-width: 100px;
+  pointer-events: none;
+}
+
+.menu-card-at-cart-box .menu-card-info-for-cart {
+  padding: 5px 5px 5px 10px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu-card-info-for-cart ul {
+  margin: 0;
+  font-size: 14px;
+  list-style-type: none;
+}
+
+.edit-btn {
+  color: #bdc3c7;
+  margin: auto 15px auto 0;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  color: #2c3e50;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -119,6 +163,10 @@
 
   .card-button-wrap {
     display: none !important;
+  }
+
+  .edit-btn {
+    display: none;
   }
 }
 

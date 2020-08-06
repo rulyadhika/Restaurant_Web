@@ -55,7 +55,7 @@ function displayData(data) {
                             }</li>
                         </ul>
                         <div class="card-button-wrap">
-                          <button type="button" class="btn btn-outline-dark btn-sm more-detail-btn" data-id="${
+                          <button type="button" class="btn btn-outline-dark btn-sm more-detail-btn " data-id="${
                             data.id
                           }" data-toggle="modal" data-target="#foodDetails">More Detail</button>
                           <button class="btn btn-warning btn-sm text-white add-to-cart-btn" data-id="${
@@ -76,6 +76,25 @@ document.addEventListener("click", async function (el) {
     const getFoodData = await reqData();
     const foodId = target.dataset.id;
     showFoodDetail(getFoodData, foodId);
+  } else if (target.classList.contains("add-to-cart-btn")) {
+    const makananPembukaCartBox = document.querySelector(
+      ".makanan-pembuka-cart-box"
+    );
+    const makananUtamaCartBox = document.querySelector(
+      ".makanan-utama-cart-box"
+    );
+    const makananPenutupCartBox = document.querySelector(
+      ".makanan-penutup-cart-box"
+    );
+    const foodId = target.dataset.id;
+    if (foodId.includes("aptz")) {
+      addToCart(foodId, makananPembukaCartBox);
+    } else if (foodId.includes("mm")) {
+      addToCart(foodId, makananUtamaCartBox);
+    }
+    if (foodId.includes("dsrt")) {
+      addToCart(foodId, makananPenutupCartBox);
+    }
   }
 });
 
@@ -90,9 +109,9 @@ function showFoodDetail(data, id) {
                     </div>
                     <div class="col-md-8">
                         <ul class="list-group list-group-flush">
-                          <li class="list-group-item"><span class="modalTitle">${data.nama}</span></li>
-                          <li class="list-group-item"><span class="modalTitle">Harga : </span>Rp. ${data.harga}</li>
-                          <li class="list-group-item"><span class="modalTitle">Deskripsi Makanan : </span> <br/> ${data.deskripsi}</li>
+                          <li class="list-group-item"><span class="customTitle">${data.nama}</span></li>
+                          <li class="list-group-item"><span class="customTitle">Harga : </span>Rp. ${data.harga}</li>
+                          <li class="list-group-item"><span class="customTitle">Deskripsi Makanan : </span> <br/> ${data.deskripsi}</li>
                         </ul>
                     </div>
                   </div>
@@ -104,4 +123,28 @@ function showFoodDetail(data, id) {
   const modalAddToCartBtn = document.querySelector(".modal-add-to-cart-btn");
   foodDetailModalBody.innerHTML = foodDetailData;
   modalAddToCartBtn.dataset.id = id;
+}
+
+async function addToCart(id, loc) {
+  const getFoodData = await reqData();
+  const filteredData = getFoodData
+    .filter((data) => data.id == id)
+    .map(
+      (data) => `<div class="card menu-card-at-cart-box ml-1 mr-1 mb-1">
+                  <img src="${data.gambar}" class="card-img-top" alt="...">
+                  <div class="card-body menu-card-info-for-cart">
+                    <ul>
+                      <li><span class="customTitle">${data.nama}</span> (2 pcs)</li>
+                      <li>Harga : Rp. ${data.harga}</li>
+                    </ul>
+                    <ul>
+                      <li>Total : Rp. 100000</li>
+                    </ul>
+                  </div>
+                  <div class="edit-btn">
+                     <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </div>
+                 </div>`
+    );
+  loc.innerHTML += filteredData;
 }
