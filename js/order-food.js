@@ -88,12 +88,11 @@ document.addEventListener("click", async function (el) {
     );
     const foodId = target.dataset.id;
     if (foodId.includes("aptz")) {
-      addToCart(foodId, makananPembukaCartBox);
+      cekData(foodId, makananPembukaCartBox);
     } else if (foodId.includes("mm")) {
-      addToCart(foodId, makananUtamaCartBox);
-    }
-    if (foodId.includes("dsrt")) {
-      addToCart(foodId, makananPenutupCartBox);
+      cekData(foodId, makananUtamaCartBox);
+    } else if (foodId.includes("dsrt")) {
+      cekData(foodId, makananPenutupCartBox);
     }
   }
 });
@@ -130,21 +129,41 @@ async function addToCart(id, loc) {
   const filteredData = getFoodData
     .filter((data) => data.id == id)
     .map(
-      (data) => `<div class="card menu-card-at-cart-box ml-1 mr-1 mb-1">
-                  <img src="${data.gambar}" class="card-img-top" alt="...">
-                  <div class="card-body menu-card-info-for-cart">
-                    <ul>
-                      <li><span class="customTitle">${data.nama}</span> (2 pcs)</li>
-                      <li>Harga : Rp. ${data.harga}</li>
-                    </ul>
-                    <ul>
-                      <li>Total : Rp. 100000</li>
-                    </ul>
-                  </div>
-                  <div class="edit-btn">
-                     <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </div>
-                 </div>`
+      (data) =>
+        `<div class="card menu-card-at-cart-box ml-1 mr-1 mb-1" data-id="${data.id}">
+          <img src="${data.gambar}" class="card-img-top" alt="...">
+          <div class="card-body menu-card-info-for-cart">
+            <ul>
+              <li><span class="customTitle">${data.nama}</span> (2 pcs)</li>
+                 <li>Harga : Rp. ${data.harga}</li>
+              </ul>
+               <ul>
+                  <li>Total : Rp. 100000</li>
+               </ul>
+         </div>
+          <div class="edit-btn">
+           <i class="fa fa-pencil" aria-hidden="true"></i>
+          </div>
+        </div>`
     );
   loc.innerHTML += filteredData;
+}
+
+function cekData(id, loc) {
+  let status;
+  if (loc.childElementCount > 0) {
+    for (let i = 0; i < loc.childElementCount; i++) {
+      if (loc.children[i].dataset.id != id) {
+        status = true;
+      } else if (loc.children[i].dataset.id == id) {
+        status = false;
+      }
+    }
+  } else {
+    status = true;
+  }
+
+  if (status == true) {
+    addToCart(id, loc);
+  }
 }
