@@ -69,12 +69,12 @@ function displayData(data) {
 
 document.addEventListener("click", async function (el) {
   const target = el.target;
+  const getFoodData = await reqData();
+  const foodId = target.dataset.id;
   if (target.classList.contains("menu-card-box")) {
     const moreDetailBtnLoc = target.children[1].children[2].children[0];
     moreDetailBtnLoc.click();
   } else if (target.classList.contains("more-detail-btn")) {
-    const getFoodData = await reqData();
-    const foodId = target.dataset.id;
     showFoodDetail(getFoodData, foodId);
   } else if (target.classList.contains("add-to-cart-btn")) {
     const makananPembukaCartBox = document.querySelector(
@@ -126,38 +126,46 @@ function showFoodDetail(data, id) {
 
 async function addToCart(id, loc) {
   const getFoodData = await reqData();
-  const filteredData = getFoodData
-    .filter((data) => data.id == id)
-    .map(
-      (data) =>
-        `<div class="card menu-card-at-cart-box ml-1 mr-1 mb-1" data-id="${data.id}">
-          <img src="${data.gambar}" class="card-img-top" alt="...">
-          <div class="card-body menu-card-info-for-cart">
-            <ul>
-              <li><span class="customTitle">${data.nama}</span> (2 pcs)</li>
-                 <li>Harga : Rp. ${data.harga}</li>
-              </ul>
-               <ul>
-                  <li>Total : Rp. 100000</li>
-               </ul>
-         </div>
-          <div class="edit-btn">
-           <i class="fa fa-pencil" aria-hidden="true"></i>
-          </div>
-        </div>`
-    );
-  loc.innerHTML += filteredData;
+  const filteredData = getFoodData.filter((data) => data.id == id);
+  const tempalteFilteredData = filteredData.map(
+    (data) =>
+      `<div class="card menu-card-at-cart-box ml-1 mr-1 mb-1" data-id="${data.id}">
+        <img src="${data.gambar}" alt="...">
+        <div class="card-body menu-card-info-for-cart">
+          <ul>
+            <li><span class="customTitle">${data.nama}</span> (2 pcs)</li>
+            <li>Harga : Rp. ${data.harga}</li>
+          </ul>
+          <ul>
+            <li>Total : Rp. 100000</li>
+          </ul>
+          <ul>
+            <div class="btn-group counter-cntrl-btn ">
+              <button class="minBtn btn bg-light text-dark btn-sm">-</button>
+              <button class="counterArea btn bg-light text-darkcounter-box btn-sm">1</button>
+              <button class="plusBtn btn bg-light text-darkbtn-sm">+</button>
+            </div>
+          </ul>
+       </div>
+        <div class="delete-btn">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+      </div>`
+  );
+  addToStorage(filteredData);
+  loc.innerHTML += tempalteFilteredData;
 }
 
+let dataAccumulatorId = [];
+let dataAccumulator = [];
 function cekData(id, loc) {
+  let dataAccumulatorIdInString = dataAccumulatorId.join(" - ");
   let status;
-  if (loc.childElementCount > 0) {
-    for (let i = 0; i < loc.childElementCount; i++) {
-      if (loc.children[i].dataset.id != id) {
-        status = true;
-      } else if (loc.children[i].dataset.id == id) {
-        status = false;
-      }
+  if (dataAccumulator.length > 0) {
+    if (dataAccumulatorIdInString.includes(id)) {
+      status = false;
+    } else if (!dataAccumulatorIdInString.includes(id)) {
+      status = true;
     }
   } else {
     status = true;
@@ -166,4 +174,10 @@ function cekData(id, loc) {
   if (status == true) {
     addToCart(id, loc);
   }
+}
+
+function addToStorage(data) {
+  data.forEach((data) => dataAccumulator.push(data));
+  let tempAccumulatorId = data.map((data) => data.id);
+  dataAccumulatorId.push(tempAccumulatorId);
 }
