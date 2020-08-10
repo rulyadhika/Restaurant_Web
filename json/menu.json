@@ -1,7 +1,7 @@
 [
   {
     "nama": "Mendoan",
-    "harga": "25000",
+    "harga": 25000,
     "kategori": "makanan-pembuka",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
@@ -9,7 +9,7 @@
   },
   {
     "nama": "Gorengan yahut",
-    "harga": "23000",
+    "harga": 23000,
     "kategori": "makanan-pembuka",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
@@ -17,7 +17,7 @@
   },
   {
     "nama": "Risol",
-    "harga": "21000",
+    "harga": 21000,
     "kategori": "makanan-pembuka",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
@@ -25,7 +25,7 @@
   },
   {
     "nama": "Rendang",
-    "harga": "22000",
+    "harga": 22000,
     "kategori": "makanan-utama",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
@@ -33,7 +33,7 @@
   },
   {
     "nama": "Bistik",
-    "harga": "20000",
+    "harga": 20000,
     "kategori": "makanan-utama",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
@@ -41,7 +41,7 @@
   },
   {
     "nama": "Satai Kambing",
-    "harga": "25000",
+    "harga": 25000,
     "kategori": "makanan-utama",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
@@ -49,7 +49,7 @@
   },
   {
     "nama": "Shriaptz",
-    "harga": "15000",
+    "harga": 15000,
     "kategori": "makanan-utama",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
@@ -57,7 +57,7 @@
   },
   {
     "nama": "Strawberry Cake",
-    "harga": "15000",
+    "harga": 15000,
     "kategori": "makanan-penutup",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
@@ -65,7 +65,7 @@
   },
   {
     "nama": "Ice Cream",
-    "harga": "15000",
+    "harga": 15000,
     "kategori": "makanan-penutup",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
@@ -73,7 +73,7 @@
   },
   {
     "nama": "Black Forest Cake",
-    "harga": "15000",
+    "harga": 15000,
     "kategori": "makanan-penutup",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
@@ -81,7 +81,7 @@
   },
   {
     "nama": "Gulai",
-    "harga": "25000",
+    "harga": 25000,
     "kategori": "makanan-utama",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",

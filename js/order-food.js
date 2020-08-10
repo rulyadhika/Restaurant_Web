@@ -94,6 +94,10 @@ document.addEventListener("click", async function (el) {
     } else if (foodId.includes("dsrt")) {
       cekData(foodId, makananPenutupCartBox);
     }
+  } else if (target.classList.contains("minBtn")) {
+    foodCounter(target, foodId, "min");
+  } else if (target.classList.contains("plusBtn")) {
+    foodCounter(target, foodId, "plus");
   }
 });
 
@@ -129,11 +133,13 @@ async function addToCart(id, loc) {
   const filteredData = getFoodData.filter((data) => data.id == id);
   const tempalteFilteredData = filteredData.map(
     (data) =>
-      `<div class="card menu-card-at-cart-box ml-1 mr-1 mb-1" data-id="${data.id}">
+      `<div class="card menu-card-at-cart-box ml-1 mr-1 mb-1" data-id="${
+        data.id
+      }">
         <img src="${data.gambar}" alt="...">
         <div class="card-body menu-card-info-for-cart">
           <ul>
-            <li><span class="customTitle">${data.nama}</span> (2 pcs)</li>
+            <li><span class="customTitle">${data.nama}</span> (1 pcs)</li>
             <li>Harga : Rp. ${data.harga}</li>
           </ul>
           <ul>
@@ -141,9 +147,13 @@ async function addToCart(id, loc) {
           </ul>
           <ul>
             <div class="btn-group counter-cntrl-btn ">
-              <button class="minBtn btn bg-light text-dark btn-sm">-</button>
-              <button class="counterArea btn bg-light text-darkcounter-box btn-sm">1</button>
-              <button class="plusBtn btn bg-light text-darkbtn-sm">+</button>
+              <button class="minBtn btn bg-light text-dark btn-sm" data-id="${
+                data.id
+              }">-</button>
+              <button class="counterArea btn bg-light text-darkcounter-box btn-sm">${1}</button>
+              <button class="plusBtn btn bg-light text-darkbtn-sm" data-id="${
+                data.id
+              }">+</button>
             </div>
           </ul>
        </div>
@@ -156,15 +166,15 @@ async function addToCart(id, loc) {
   loc.innerHTML += tempalteFilteredData;
 }
 
-let dataAccumulatorId = [];
-let dataAccumulator = [];
+let dataCollectorId = [];
+let dataCollector = [];
 function cekData(id, loc) {
-  let dataAccumulatorIdInString = dataAccumulatorId.join(" - ");
+  let dataCollectorIdInString = dataCollectorId.join(" - ");
   let status;
-  if (dataAccumulator.length > 0) {
-    if (dataAccumulatorIdInString.includes(id)) {
+  if (dataCollector.length > 0) {
+    if (dataCollectorIdInString.includes(id)) {
       status = false;
-    } else if (!dataAccumulatorIdInString.includes(id)) {
+    } else if (!dataCollectorIdInString.includes(id)) {
       status = true;
     }
   } else {
@@ -177,7 +187,57 @@ function cekData(id, loc) {
 }
 
 function addToStorage(data) {
-  data.forEach((data) => dataAccumulator.push(data));
-  let tempAccumulatorId = data.map((data) => data.id);
-  dataAccumulatorId.push(tempAccumulatorId);
+  data.map((data) => {
+    let collector = {
+      id: data.id,
+      harga: data.harga,
+      jumlah: 1,
+      totalHarga: data.harga,
+    };
+    dataCollector.push(collector);
+  });
+  let tempCollectorId = data.map((data) => data.id);
+  dataCollectorId.push(tempCollectorId);
+}
+
+function foodCounter(loc, id, event) {
+  let counterDisplay = loc.parentElement.childNodes[3].childNodes[0];
+  let totalPriceDisplay =
+    loc.parentElement.parentElement.parentElement.childNodes[3].childNodes[1]
+      .childNodes[0];
+  let unitDisplay =
+    loc.parentElement.parentElement.parentElement.childNodes[1].childNodes[1]
+      .childNodes[1];
+  if (event === "min") {
+    for (let i of dataCollector) {
+      if (i.id === id) {
+        let jumlah = i.jumlah;
+        jumlah--;
+        if (jumlah >= 1) {
+          i.jumlah = jumlah;
+          i.totalHarga = i.harga * i.jumlah;
+          counterDisplay.nodeValue = i.jumlah;
+          totalPriceDisplay.nodeValue = `Total : Rp. ${i.totalHarga}`;
+          unitDisplay.nodeValue = ` (${i.jumlah} pcs)`;
+        } else {
+          i.jumlah = 1;
+          counterDisplay.nodeValue = 1;
+          totalPriceDisplay.nodeValue = `Total : Rp. ${i.totalHarga}`;
+          unitDisplay.nodeValue = ` (${i.jumlah} pcs)`;
+        }
+      }
+    }
+  } else {
+    for (let i of dataCollector) {
+      if (i.id === id) {
+        let jumlah = i.jumlah;
+        jumlah++;
+        i.jumlah = jumlah;
+        i.totalHarga = i.harga * i.jumlah;
+        counterDisplay.nodeValue = jumlah;
+        totalPriceDisplay.nodeValue = `Total : Rp. ${i.totalHarga}`;
+        unitDisplay.nodeValue = ` (${i.jumlah} pcs)`;
+      }
+    }
+  }
 }
