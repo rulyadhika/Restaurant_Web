@@ -98,6 +98,8 @@ document.addEventListener("click", async function (el) {
     foodCounter(target, foodId, "min");
   } else if (target.classList.contains("plusBtn")) {
     foodCounter(target, foodId, "plus");
+  } else if (target.classList.contains("delete-btn")) {
+    deleteItem(target.parentElement);
   }
 });
 
@@ -139,11 +141,11 @@ async function addToCart(id, loc) {
         <img src="${data.gambar}" alt="...">
         <div class="card-body menu-card-info-for-cart">
           <ul>
-            <li><span class="customTitle">${data.nama}</span> (1 pcs)</li>
+            <li><span class="customTitle">${data.nama}</span> (1 paket)</li>
             <li>Harga : Rp. ${data.harga}</li>
           </ul>
           <ul>
-            <li>Total : Rp. 100000</li>
+            <li>Total : Rp. ${data.harga}</li>
           </ul>
           <ul>
             <div class="btn-group counter-cntrl-btn ">
@@ -198,6 +200,7 @@ function addToStorage(data) {
   });
   let tempCollectorId = data.map((data) => data.id);
   dataCollectorId.push(tempCollectorId);
+  totalPriceAllMenu();
 }
 
 function foodCounter(loc, id, event) {
@@ -218,12 +221,12 @@ function foodCounter(loc, id, event) {
           i.totalHarga = i.harga * i.jumlah;
           counterDisplay.nodeValue = i.jumlah;
           totalPriceDisplay.nodeValue = `Total : Rp. ${i.totalHarga}`;
-          unitDisplay.nodeValue = ` (${i.jumlah} pcs)`;
+          unitDisplay.nodeValue = ` (${i.jumlah} paket)`;
         } else {
           i.jumlah = 1;
           counterDisplay.nodeValue = 1;
           totalPriceDisplay.nodeValue = `Total : Rp. ${i.totalHarga}`;
-          unitDisplay.nodeValue = ` (${i.jumlah} pcs)`;
+          unitDisplay.nodeValue = ` (${i.jumlah} paket)`;
         }
       }
     }
@@ -236,8 +239,36 @@ function foodCounter(loc, id, event) {
         i.totalHarga = i.harga * i.jumlah;
         counterDisplay.nodeValue = jumlah;
         totalPriceDisplay.nodeValue = `Total : Rp. ${i.totalHarga}`;
-        unitDisplay.nodeValue = ` (${i.jumlah} pcs)`;
+        unitDisplay.nodeValue = ` (${i.jumlah} paket)`;
       }
     }
   }
+  totalPriceAllMenu();
+}
+
+function deleteItem(loc) {
+  let cardId = loc.dataset.id;
+  for (let i in dataCollectorId) {
+    if (dataCollectorId[i] == cardId) {
+      dataCollectorId[i] = undefined;
+    }
+  }
+  for (let i in dataCollector) {
+    if (dataCollector[i].id == cardId) {
+      for (let j in dataCollector[i]) {
+        dataCollector[i][j] = null;
+      }
+    }
+  }
+  loc.remove();
+  totalPriceAllMenu();
+}
+
+function totalPriceAllMenu() {
+  let totalPrice = 0;
+  dataCollector.forEach((p) => (totalPrice += p.totalHarga));
+  let totalPriceAllMenuBox = document.querySelector(
+    ".total-price-all-menu-box"
+  );
+  totalPriceAllMenuBox.innerHTML = `Total Harga Makanan : Rp. ${totalPrice}`;
 }

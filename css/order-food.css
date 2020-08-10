@@ -56,7 +56,8 @@
   font-size: 12px;
 }
 
-.checkout-main-box .checkout-title {
+.checkout-main-box .checkout-title,
+.payment-title {
   background-color: rgba(0, 0, 0, 0.03);
   padding: 1.2rem 1.25rem;
 }
@@ -119,6 +120,10 @@
   align-items: center;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+
+.delete-btn i {
+  pointer-events: none;
 }
 
 .delete-btn:hover {
