@@ -12,6 +12,8 @@
 .content-container {
   width: 100%;
   padding: 100px 20px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .main-row {
@@ -21,6 +23,26 @@
 
 .checkout-main-box {
   height: fit-content;
+}
+
+.menu-card-box {
+  border: none !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.menu-card-box:hover,
+.menu-card-at-cart-box:hover {
+  transform: scale(1.02);
+}
+
+.menu-card-box img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-card-box:hover img {
+  transform: scale(1.03);
 }
 
 .menu-card-info {
@@ -80,6 +102,8 @@
   width: 100%;
   display: flex;
   flex-direction: row !important;
+  border: none !important;
+  transition: transform 0.3s ease-in-out;
 }
 
 .fadeInAnimation {
@@ -125,7 +149,7 @@
   height: 80px;
   object-fit: cover;
   border-radius: 5px;
-  margin: 5px 0 5px 5px;
+  margin: 10px 0 0 10px;
   pointer-events: none;
 }
 
@@ -157,6 +181,7 @@
   align-items: center;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  border-radius: 0 5px 5px 0;
 }
 
 .delete-btn i {
@@ -233,6 +258,14 @@
 
   .card-button-wrap {
     display: none !important;
+  }
+
+  .modal-close-btn {
+    display: none !important;
+  }
+
+  .modal-add-to-cart-btn {
+    width: 100% !important;
   }
 }
 

@@ -136,7 +136,7 @@ async function addToCart(id, loc) {
   const filteredData = getFoodData.filter((data) => data.id == id);
   const tempalteFilteredData = filteredData.map(
     (data) =>
-      `<div class="card menu-card-at-cart-box ml-1 mr-1 mb-1 fadeInAnimation" data-id="${
+      `<div class="card menu-card-at-cart-box ml-1 mr-1 mb-1 fadeInAnimation shadow-sm" data-id="${
         data.id
       }">
         <img src="${data.gambar}" alt="...">
