@@ -21,6 +21,43 @@
   margin: 0 !important;
 }
 
+.accordionFoodMenu,
+.accordionFoodMenuHeader {
+  border: none !important;
+}
+
+.accordionFoodMenu,
+.checkout-main-box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.accordionFoodMenuHeader,
+.checkout-title,
+.payment-title {
+  transition: all 0.1s ease-in-out;
+  background-color: rgb(238, 238, 238) !important;
+}
+
+.accordionFoodMenuHeader:hover {
+  background-color: rgb(224, 224, 224) !important;
+}
+
+.accordionBtn {
+  border-color: none !important;
+  box-shadow: none !important;
+  font-weight: bold !important;
+}
+
+.accordionBtn i {
+  transition: all 0.3s ease;
+  float: right;
+  margin-top: 5px;
+}
+
+.accordionBtn:hover i {
+  transform: rotate(180deg);
+}
+
 .checkout-main-box {
   height: fit-content;
 }
@@ -28,17 +65,16 @@
 .menu-card-box {
   border: none !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   overflow: hidden;
 }
 
-.menu-card-box:hover,
-.menu-card-at-cart-box:hover {
-  transform: scale(1.02);
+.menu-card-box:hover {
+  transform: scale(1.01);
 }
 
 .menu-card-box img {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .menu-card-box:hover img {
@@ -84,7 +120,6 @@
 
 .checkout-main-box .checkout-title,
 .payment-title {
-  background-color: rgba(0, 0, 0, 0.03);
   padding: 1.2rem 1.25rem;
 }
 
@@ -170,6 +205,22 @@
 .counter-cntrl-btn button {
   width: 40px;
   height: auto;
+}
+
+.counter-cntrl-btn button:hover {
+  background-color: rgb(239, 239, 239) !important;
+}
+
+.counterArea {
+  background-color: rgb(239, 239, 239) !important;
+  pointer-events: none;
+}
+
+.minBtn,
+.plusBtn {
+  border-color: none !important;
+  box-shadow: none !important;
+  background-color: rgb(247, 247, 247);
 }
 
 .delete-btn {

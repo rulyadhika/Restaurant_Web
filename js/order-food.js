@@ -149,14 +149,10 @@ async function addToCart(id, loc) {
             <li>Total : Rp. ${data.harga}</li>
           </ul>
           <ul>
-            <div class="btn-group counter-cntrl-btn ">
-              <button class="minBtn btn bg-light text-dark btn-sm" data-id="${
-                data.id
-              }">-</button>
-              <button class="counterArea btn bg-light text-darkcounter-box btn-sm">${1}</button>
-              <button class="plusBtn btn bg-light text-darkbtn-sm" data-id="${
-                data.id
-              }">+</button>
+            <div class="btn-group counter-cntrl-btn border rounded">
+              <button class="minBtn btn" data-id="${data.id}">-</button>
+              <button class="counterArea btn counter-box btn-sm">${1}</button>
+              <button class="plusBtn btn" data-id="${data.id}">+</button>
             </div>
           </ul>
        </div>
