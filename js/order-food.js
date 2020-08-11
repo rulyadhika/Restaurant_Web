@@ -75,7 +75,7 @@ document.addEventListener("click", async function (el) {
     const moreDetailBtnLoc = target.children[1].children[2].children[0];
     moreDetailBtnLoc.click();
   } else if (target.classList.contains("more-detail-btn")) {
-    showFoodDetail(getFoodData, foodId);
+    showFoodDetail(target, getFoodData, foodId);
   } else if (target.classList.contains("add-to-cart-btn")) {
     const makananPembukaCartBox = document.querySelector(
       ".makanan-pembuka-cart-box"
@@ -103,7 +103,7 @@ document.addEventListener("click", async function (el) {
   }
 });
 
-function showFoodDetail(data, id) {
+function showFoodDetail(loc, data, id) {
   const foodDetailData = data
     .filter((data) => data.id == id)
     .map(
@@ -128,6 +128,7 @@ function showFoodDetail(data, id) {
   const modalAddToCartBtn = document.querySelector(".modal-add-to-cart-btn");
   foodDetailModalBody.innerHTML = foodDetailData;
   modalAddToCartBtn.dataset.id = id;
+  disabledEnabledAddToCartBtn("toBeDisabledForModalBox", id, loc);
 }
 
 async function addToCart(id, loc) {
@@ -135,7 +136,7 @@ async function addToCart(id, loc) {
   const filteredData = getFoodData.filter((data) => data.id == id);
   const tempalteFilteredData = filteredData.map(
     (data) =>
-      `<div class="card menu-card-at-cart-box ml-1 mr-1 mb-1" data-id="${
+      `<div class="card menu-card-at-cart-box ml-1 mr-1 mb-1 fadeInAnimation" data-id="${
         data.id
       }">
         <img src="${data.gambar}" alt="...">
@@ -166,6 +167,13 @@ async function addToCart(id, loc) {
   );
   addToStorage(filteredData);
   loc.innerHTML += tempalteFilteredData;
+  let menuCardAtCartBox = document.querySelectorAll(".menu-card-at-cart-box");
+  menuCardAtCartBox.forEach((card) => {
+    card.addEventListener("animationend", function () {
+      card.classList.remove("fadeInAnimation");
+    });
+  });
+  disabledEnabledAddToCartBtn("toBeDisabled", id);
 }
 
 let dataCollectorId = [];
@@ -260,7 +268,11 @@ function deleteItem(loc) {
       }
     }
   }
-  loc.remove();
+  loc.classList.add("fadeOutAnimation");
+  loc.addEventListener("animationend", function () {
+    loc.remove();
+    disabledEnabledAddToCartBtn("toBeEnabled", cardId);
+  });
   totalPriceAllMenu();
 }
 
@@ -271,4 +283,23 @@ function totalPriceAllMenu() {
     ".total-price-all-menu-box"
   );
   totalPriceAllMenuBox.innerHTML = `Total Harga Makanan : Rp. ${totalPrice}`;
+}
+
+function disabledEnabledAddToCartBtn(condition, id, loc) {
+  let selectedBtn = document.querySelectorAll(".add-to-cart-btn");
+  selectedBtn.forEach((btn) => {
+    if (btn.dataset.id == id) {
+      if (condition === "toBeDisabled") {
+        btn.disabled = true;
+      } else if (condition === "toBeEnabled") {
+        btn.disabled = false;
+      } else {
+        if (loc.nextElementSibling.disabled == false) {
+          btn.disabled = false;
+        } else {
+          btn.disabled = true;
+        }
+      }
+    }
+  });
 }
