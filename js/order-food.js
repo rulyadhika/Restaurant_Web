@@ -255,14 +255,12 @@ function deleteItem(loc) {
   let cardId = loc.dataset.id;
   for (let i in dataCollectorId) {
     if (dataCollectorId[i] == cardId) {
-      dataCollectorId[i] = undefined;
+      dataCollectorId.splice(i, 1);
     }
   }
   for (let i in dataCollector) {
     if (dataCollector[i].id == cardId) {
-      for (let j in dataCollector[i]) {
-        dataCollector[i][j] = null;
-      }
+      dataCollector.splice(i, 1);
     }
   }
   loc.classList.add("fadeOutAnimation");
@@ -282,6 +280,10 @@ function totalPriceAllMenu() {
   totalPriceAllMenuBox.innerHTML = `Total Harga Makanan : Rp. ${totalPrice}`;
 }
 
+// disabling checkout button
+let checkoutBtn = document.querySelector(".checkout-btn");
+checkoutBtn.disabled = true;
+
 function disabledEnabledAddToCartBtn(condition, id, loc) {
   let selectedBtn = document.querySelectorAll(".add-to-cart-btn");
   selectedBtn.forEach((btn) => {
@@ -299,6 +301,14 @@ function disabledEnabledAddToCartBtn(condition, id, loc) {
       }
     }
   });
+
+  // disabling/enabling checkout button
+  let checkoutBtn = document.querySelector(".checkout-btn");
+  if (dataCollector.length == 0) {
+    checkoutBtn.disabled = true;
+  } else {
+    checkoutBtn.disabled = false;
+  }
 }
 
 function alertPopUp(condition, id, foodData) {
