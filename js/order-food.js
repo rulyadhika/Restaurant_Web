@@ -77,6 +77,7 @@ document.addEventListener("click", async function (el) {
   } else if (target.classList.contains("more-detail-btn")) {
     showFoodDetail(target, getFoodData, foodId);
   } else if (target.classList.contains("add-to-cart-btn")) {
+    alertPopUp("success", foodId, getFoodData);
     const makananPembukaCartBox = document.querySelector(
       ".makanan-pembuka-cart-box"
     );
@@ -86,7 +87,6 @@ document.addEventListener("click", async function (el) {
     const makananPenutupCartBox = document.querySelector(
       ".makanan-penutup-cart-box"
     );
-    const foodId = target.dataset.id;
     if (foodId.includes("aptz")) {
       cekData(foodId, makananPembukaCartBox);
     } else if (foodId.includes("mm")) {
@@ -100,6 +100,7 @@ document.addEventListener("click", async function (el) {
     foodCounter(target, foodId, "plus");
   } else if (target.classList.contains("delete-btn")) {
     deleteItem(target.parentElement);
+    alertPopUp("delete", target.parentElement.dataset.id, getFoodData);
   }
 });
 
@@ -297,5 +298,22 @@ function disabledEnabledAddToCartBtn(condition, id, loc) {
         }
       }
     }
+  });
+}
+
+function alertPopUp(condition, id, foodData) {
+  let popUpAlertTemplate = `
+  <div class="alert popUpAlert" role="alert">
+  ${foodData.filter((data) => data.id == id).map((data) => data.nama)} ${
+    condition == "success" ? `Ditambahkan Ke` : `Dihapus Dari`
+  } Keranjang
+  </div>`;
+  let popUpArea = document.querySelector(".popUpArea");
+  popUpArea.innerHTML += popUpAlertTemplate;
+  let popUpAlert = document.querySelectorAll(".popUpAlert");
+  popUpAlert.forEach((e) => {
+    e.addEventListener("animationend", function () {
+      e.remove();
+    });
   });
 }
