@@ -103,6 +103,15 @@ document.addEventListener("click", async function (el) {
     alertPopUp("delete", target.parentElement.dataset.id, getFoodData);
   } else if (target.classList.contains("save-customer-data-btn")) {
     addCustomerData();
+  } else if (target.id === "agreementCheckBox") {
+    const saveCustomerDataBtn = document.querySelector(
+      ".save-customer-data-btn"
+    );
+    if (target.checked === true) {
+      saveCustomerDataBtn.disabled = false;
+    } else {
+      saveCustomerDataBtn.disabled = true;
+    }
   }
 });
 
@@ -316,12 +325,16 @@ function disabledEnabledAddToCartBtn(condition, id, loc) {
 function alertPopUp(condition, id, foodData) {
   let popUpAlertTemplate = `
   <div class="alert popUpAlert" role="alert">
-  ${foodData.filter((data) => data.id == id).map((data) => data.nama)} ${
-    condition == "success" ? `Ditambahkan Ke` : `Dihapus Dari`
-  } Keranjang
+  ${
+    condition == "Data Telah Berhasil Di Simpan"
+      ? `${condition}`
+      : `${foodData.filter((data) => data.id == id).map((data) => data.nama)} ${
+          condition == "success" ? `Ditambahkan Ke` : `Dihapus Dari`
+        } Keranjang`
+  }
   </div>`;
   let popUpArea = document.querySelector(".popUpArea");
-  popUpArea.innerHTML += popUpAlertTemplate;
+  popUpArea.innerHTML = popUpAlertTemplate;
   let popUpAlert = document.querySelectorAll(".popUpAlert");
   popUpAlert.forEach((e) => {
     e.addEventListener("animationend", function () {
@@ -354,4 +367,9 @@ function addCustomerData() {
   let checkoutBtn = document.querySelector(".checkout-btn");
   checkoutBtn.removeAttribute("data-toggle");
   checkoutBtn.removeAttribute("data-target");
+  alertPopUp("Data Telah Berhasil Di Simpan");
 }
+
+// disabling saveCustomerDataBtn
+const saveCustomerDataBtn = document.querySelector(".save-customer-data-btn");
+saveCustomerDataBtn.disabled = true;

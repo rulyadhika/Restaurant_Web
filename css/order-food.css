@@ -386,6 +386,9 @@ form i {
     width: max-content;
     margin: 0 auto;
   }
+  .checkout-main-box {
+    margin-top: 25px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -447,7 +450,9 @@ form i {
     display: none !important;
   }
 
-  .modal-add-to-cart-btn {
+  .modal-add-to-cart-btn,
+  .save-customer-data-btn,
+  .checkout-btn {
     width: 100% !important;
   }
 }
