@@ -168,7 +168,15 @@
                 Total Harga Makanan : Rp. 0
               </div>
               <div class="col-12 customerData p-2">
-                <span class="customTitle">Data Customer :</span>
+                <div>
+                  <span class="customTitle">Data Customer :</span>
+                  <i
+                    class="fa fa-pencil edit-customer-data-btn"
+                    aria-hidden="true"
+                    data-toggle="modal"
+                    data-target="#versitileModal"
+                  ></i>
+                </div>
                 <li>Nama : -</li>
                 <li>Email : -</li>
                 <li>Nomor Hp : -</li>
@@ -184,6 +192,8 @@
                 <button
                   type="button"
                   class="btn btn-warning text-light float-right btn-sm checkout-btn"
+                  data-toggle="modal"
+                  data-target="#versitileModal"
                 >
                   Checkout
                 </button>
@@ -199,7 +209,7 @@
       class="modal fade"
       id="foodDetails"
       tabindex="-1"
-      aria-labelledby="versitileModalLabel"
+      aria-labelledby="foodDetailsModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog modal-lg">
@@ -229,6 +239,104 @@
               data-dismiss="modal"
             >
               Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for inserting customer data and displaying order successfully-->
+    <div
+      class="modal fade"
+      id="versitileModal"
+      tabindex="-1"
+      aria-labelledby="versitileModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="versitileModalLabel">
+              Customer Data
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body versitileModalBody">
+            <p>Silahkan Isi Data Dibawah Ini Untuk Melanjutkan</p>
+            <form autocomplete="off" class="customerForm">
+              <div class="namaBox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input
+                  type="text"
+                  name="inputNama"
+                  id=""
+                  placeholder="Nama Lengkap"
+                />
+              </div>
+              <div class="emailBox">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <input
+                  type="email"
+                  name="inputEmail"
+                  id=""
+                  placeholder="Email"
+                />
+              </div>
+              <div class="nomerHpBox">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <input
+                  type="tel"
+                  name="inputNomerHp"
+                  id=""
+                  placeholder="Nomer Hp"
+                />
+              </div>
+              <div class="adressBox">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <textarea
+                  name="inputAlamat"
+                  id=""
+                  placeholder="Alamat Tujuan"
+                ></textarea>
+              </div>
+              <div class="cabangBox">
+                <i class="fa fa-building" aria-hidden="true"></i>
+                <select name="inputCabang" id="">
+                  <option value="-">Pilih Cabang</option>
+                  <option value="Jakarta Pusat">Jakarta Pusat</option>
+                  <option value="Jakarta Selatan">Jakarta Selatan</option>
+                  <option value="Purwokerto">Purwokerto</option>
+                </select>
+              </div>
+            </form>
+            <div class="agreementBox">
+              <input type="checkbox" name="" id="agreementCheckBox" />
+              <span>
+                Dengan ini saya setuju bahwa data yang saya masukan adalah benar
+              </span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary btn-sm"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm save-customer-data-btn"
+              data-dismiss="modal"
+            >
+              Simpan
             </button>
           </div>
         </div>

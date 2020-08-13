@@ -101,6 +101,8 @@ document.addEventListener("click", async function (el) {
   } else if (target.classList.contains("delete-btn")) {
     deleteItem(target.parentElement);
     alertPopUp("delete", target.parentElement.dataset.id, getFoodData);
+  } else if (target.classList.contains("save-customer-data-btn")) {
+    addCustomerData();
   }
 });
 
@@ -326,4 +328,30 @@ function alertPopUp(condition, id, foodData) {
       e.remove();
     });
   });
+}
+
+function addCustomerData() {
+  let customerDataBox = document.querySelector(".customerData");
+  let customerFormBox = document.querySelector(".customerForm");
+  const inputNama = customerFormBox.querySelector("input[name='inputNama']");
+  const inputEmail = customerFormBox.querySelector("input[name='inputEmail']");
+  const inputNomerHp = customerFormBox.querySelector(
+    "input[name='inputNomerHp']"
+  );
+  const textAreaAlamat = customerFormBox.querySelector(
+    "textarea[name='inputAlamat']"
+  );
+  const selectCabang = customerFormBox.querySelector(
+    "select[name='inputCabang']"
+  );
+  customerDataBox.children[1].innerHTML = `Nama : ${inputNama.value}`;
+  customerDataBox.children[2].innerHTML = `Email : ${inputEmail.value}`;
+  customerDataBox.children[3].innerHTML = `Nomor Hp : ${inputNomerHp.value}`;
+  customerDataBox.children[4].innerHTML = `Lokasi Cabang : ${
+    selectCabang.options[selectCabang.selectedIndex].value
+  }`;
+  customerDataBox.children[5].innerHTML = `Alamat Tujuan : ${textAreaAlamat.value}`;
+  let checkoutBtn = document.querySelector(".checkout-btn");
+  checkoutBtn.removeAttribute("data-toggle");
+  checkoutBtn.removeAttribute("data-target");
 }
