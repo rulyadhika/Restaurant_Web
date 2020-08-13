@@ -288,7 +288,28 @@ function totalPriceAllMenu() {
   let totalPriceAllMenuBox = document.querySelector(
     ".total-price-all-menu-box"
   );
-  totalPriceAllMenuBox.innerHTML = `Total Harga Makanan : Rp. ${totalPrice}`;
+  totalPriceAllMenuBox.innerHTML = `Total Harga Makanan : Rp. ${
+    totalPrice > 0
+      ? `${totalPrice} ${
+          totalPrice <= 30000 ? `(Gratis ongkir min Rp. 30000)` : ``
+        }`
+      : `-`
+  }`;
+  let totalBillBox = document.querySelector(".total-bill");
+  totalBillBox.innerHTML = `Total Biaya : Rp. ${
+    totalPrice > 0
+      ? `${
+          totalPrice >= 30000
+            ? `${totalPrice}`
+            : `${totalPrice + 5000} (Termasuk Ongkir)`
+        }`
+      : `-`
+  }`;
+  let customerDataBox = document.querySelector(".customerData");
+  //ongkir list item on customerDataBox
+  customerDataBox.children[6].innerHTML = `Biaya Ongkir : ${
+    totalPrice > 0 ? `${totalPrice >= 30000 ? `Gratis` : `Rp. 5000`}` : `-`
+  }`;
 }
 
 // disabling checkout button
