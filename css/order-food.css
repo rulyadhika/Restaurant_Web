@@ -9,6 +9,15 @@
   overflow: hidden;
 }
 
+.navbar-container {
+  max-width: 1440px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
 .navbar-custom {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
