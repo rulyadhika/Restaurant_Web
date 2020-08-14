@@ -363,6 +363,26 @@ form i {
   margin-bottom: unset;
 }
 
+.completeBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.completeBox span {
+  font-weight: bold;
+  text-align: center;
+  width: 50%;
+  padding: 0 20px 0 0;
+  font-size: 15px;
+}
+
+.completeBox i {
+  color: green;
+  font-size: 100px;
+  animation: fadeComplete 0.7s ease-in-out;
+}
+
 @media only screen and (min-width: 1200px) {
   .card-button-wrap {
     display: flex;
@@ -452,6 +472,7 @@ form i {
 
   .modal-add-to-cart-btn,
   .save-customer-data-btn,
+  .versitile-modal-close-btn,
   .checkout-btn {
     width: 100% !important;
   }

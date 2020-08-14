@@ -9,9 +9,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
@@ -171,7 +169,7 @@
                 <div>
                   <span class="customTitle">Data Customer :</span>
                   <i
-                    class="fa fa-pencil edit-customer-data-btn"
+                    class="fas fa-pencil-alt edit-customer-data-btn"
                     aria-hidden="true"
                     data-toggle="modal"
                     data-target="#versitileModal"
@@ -249,11 +247,13 @@
     <div
       class="modal fade"
       id="versitileModal"
+      data-backdrop="static"
+      data-keyboard="false"
       tabindex="-1"
-      aria-labelledby="versitileModalLabel"
+      aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="versitileModalLabel">
@@ -261,7 +261,7 @@
             </h5>
             <button
               type="button"
-              class="close"
+              class="close times-btn-versitile-modal"
               data-dismiss="modal"
               aria-label="Close"
             >
@@ -333,7 +333,7 @@
             </button>
             <button
               type="button"
-              class="btn btn-primary btn-sm save-customer-data-btn"
+              class="btn btn-primary btn-sm save-customer-data-btn versitile-modal-save-btn"
               data-dismiss="modal"
             >
               Simpan

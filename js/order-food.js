@@ -112,6 +112,12 @@ document.addEventListener("click", async function (el) {
     } else {
       saveCustomerDataBtn.disabled = true;
     }
+  } else if (target.classList.contains("checkout-ready")) {
+    proceedCheckout(target);
+  } else if (target.classList.contains("versitile-modal-close-btn")) {
+    setTimeout(() => {
+      window.location.reload(false);
+    }, 1500);
   }
 });
 
@@ -388,9 +394,43 @@ function addCustomerData() {
   let checkoutBtn = document.querySelector(".checkout-btn");
   checkoutBtn.removeAttribute("data-toggle");
   checkoutBtn.removeAttribute("data-target");
+  checkoutBtn.classList.add("checkout-ready");
   alertPopUp("Data Telah Berhasil Di Simpan");
 }
 
 // disabling saveCustomerDataBtn
 const saveCustomerDataBtn = document.querySelector(".save-customer-data-btn");
 saveCustomerDataBtn.disabled = true;
+
+function proceedCheckout(target) {
+  target.disabled = true;
+  target.innerHTML = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    Tunggu Sebentar...`;
+  setTimeout(() => {
+    target.classList.replace("btn-warning", "btn-success");
+    target.innerHTML = `Berhasil <i class="fa fa-check" aria-hidden="true"></i>`;
+    setTimeout(function () {
+      let versitileModalLabel = document.querySelector("#versitileModalLabel");
+      let versitileModalBody = document.querySelector(".versitileModalBody");
+      let versitileModalSaveBtn = document.querySelector(
+        ".versitile-modal-save-btn"
+      );
+      let timesBtnVersitileModal = document.querySelector(
+        ".times-btn-versitile-modal"
+      );
+      timesBtnVersitileModal.style.display = "none";
+      versitileModalSaveBtn.style.display = "none";
+      versitileModalSaveBtn.previousElementSibling.classList.remove(
+        "modal-close-btn"
+      );
+      versitileModalSaveBtn.previousElementSibling.classList.add(
+        "versitile-modal-close-btn"
+      );
+      versitileModalBody.classList.add("completeBox");
+      versitileModalLabel.innerHTML = "Transaksi Berhasil";
+      versitileModalBody.innerHTML = `<span>Terimakasih Atas Pesanan Yang Telah Anda Buat :)</span>
+      <i class="far fa-check-circle"></i>`;
+      $("#versitileModal").modal();
+    }, 1500);
+  }, 3000);
+}
