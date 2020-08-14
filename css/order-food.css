@@ -9,6 +9,27 @@
   overflow: hidden;
 }
 
+.navbar-custom {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav-item-wrapper {
+  justify-content: flex-end;
+}
+
+.nav-item-wrapper .navbar-nav a {
+  color: white !important;
+  transition: all 0.2s ease-in-out;
+  padding: 0.5rem 1rem !important;
+  font-size: 15px;
+}
+
+.nav-item-wrapper .navbar-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-5px);
+  border-radius: 20px;
+}
+
 .popUpArea {
   z-index: 1000;
   position: fixed;
@@ -412,6 +433,25 @@ form i {
 }
 
 @media only screen and (max-width: 767px) {
+  .navbar-custom i {
+    color: white !important;
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+    border: 1px solid white !important;
+  }
+
+  .nav-item-wrapper .navbar-nav a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px !important;
+  }
+
+  .nav-item-wrapper .navbar-nav a:hover {
+    background-color: unset;
+    border-radius: unset;
+  }
+
   .content-container {
     padding: 100px 0px;
   }
