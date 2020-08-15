@@ -74,8 +74,7 @@
   text-align: center;
   padding: 10px;
   border: 1px solid white;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  letter-spacing: 4px !important;
   transition: all 0.5s ease-in-out;
 }
 
@@ -547,6 +546,10 @@ footer {
 
   .content-container {
     padding: 0px 0px 50px 0px;
+  }
+
+  .content-caption {
+    padding: 20px 30px 20px 30px !important;
   }
 
   .menu-main-box {
