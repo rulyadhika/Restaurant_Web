@@ -28,6 +28,25 @@ window.addEventListener("scroll", function () {
   }
 });
 
+function typeWriter() {
+  const text = "RadhikaCuisine - Order Food";
+  let i = 0;
+  const captionForCarousel = document.querySelector(".caption-for-carousel");
+  captionForCarousel.innerHTML = "";
+  setInterval(() => {
+    if (i < text.length) {
+      captionForCarousel.innerHTML += text[i];
+      i++;
+      if (i == text.length) {
+        setTimeout(() => {
+          captionForCarousel.innerHTML = "";
+          i = 0;
+        }, 5000);
+      }
+    }
+  }, 100);
+}
+
 function filterData(data) {
   const makananPembukaBox = document.querySelector(".makanan-pembuka-box");
   const makananUtamaBox = document.querySelector(".makanan-utama-box");
