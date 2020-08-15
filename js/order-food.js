@@ -215,9 +215,9 @@ async function addToCart(id, loc) {
           </ul>
           <ul>
             <div class="btn-group counter-cntrl-btn border rounded">
-              <button class="minBtn btn" data-id="${data.id}">-</button>
+              <button class="minBtn btn btn-sm" data-id="${data.id}">-</button>
               <button class="counterArea btn counter-box btn-sm">${1}</button>
-              <button class="plusBtn btn" data-id="${data.id}">+</button>
+              <button class="plusBtn btn btn-sm" data-id="${data.id}">+</button>
             </div>
           </ul>
        </div>

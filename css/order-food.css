@@ -123,9 +123,22 @@
 
 .content-container {
   width: 100%;
-  padding: 100px 20px;
+  padding: 10px 20px 100px 20px;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.content-caption {
+  margin: 0 auto;
+  padding: 20px 0px 30px 0px !important;
+  text-align: center;
+}
+
+.content-caption span {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 17px;
 }
 
 .main-row {
@@ -533,7 +546,7 @@ footer {
   }
 
   .content-container {
-    padding: 100px 0px;
+    padding: 0px 0px 50px 0px;
   }
 
   .menu-main-box {
@@ -588,6 +601,10 @@ footer {
 
   .modal-close-btn {
     display: none !important;
+  }
+
+  .menu-card-info-for-cart ul {
+    font-size: 12px;
   }
 
   .modal-add-to-cart-btn,
