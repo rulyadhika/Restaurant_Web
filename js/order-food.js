@@ -18,6 +18,15 @@ window.addEventListener("load", async function () {
   }
 });
 
+window.addEventListener("scroll", function () {
+  let navbarCustom = document.querySelector(".navbar-custom");
+  if (window.pageYOffset == 0) {
+    navbarCustom.classList.remove("navbar-toggle");
+  } else if (window.pageYOffset > 60) {
+    navbarCustom.classList.add("navbar-toggle");
+  }
+});
+
 function filterData(data) {
   const makananPembukaBox = document.querySelector(".makanan-pembuka-box");
   const makananUtamaBox = document.querySelector(".makanan-utama-box");
