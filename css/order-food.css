@@ -12,12 +12,13 @@
 #carouselSlidesOnly {
   max-width: 1440px;
   margin: 0 auto;
+  position: relative;
 }
 
 #carouselSlidesOnly img {
   height: 600px;
   object-fit: cover;
-  filter: brightness(50%);
+  filter: brightness(40%);
 }
 
 .navbar-container {
@@ -58,6 +59,29 @@
   background-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-5px);
   border-radius: 20px;
+}
+
+.caption-for-carousel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  color: white;
+  width: fit-content;
+  max-width: 450px;
+  height: fit-content;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+
+.caption-for-carousel:hover {
+  border: 1px solid #ffc107;
+  color: #ffc107;
 }
 
 .popUpArea {
@@ -502,6 +526,10 @@ footer {
     height: 100vh;
     object-fit: cover;
     object-position: center;
+  }
+
+  .caption-for-carousel {
+    max-width: 80%;
   }
 
   .content-container {
