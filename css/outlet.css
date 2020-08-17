@@ -90,6 +90,29 @@
   margin: 0 auto;
 }
 
+.content-caption {
+  padding: 20px 15px 30px;
+  text-align: center;
+}
+
+.content-caption h6 {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.table-section .number {
+  width: 50px !important;
+}
+
+.table-section .kota {
+  min-width: 180px;
+}
+
+.table-section .alamat {
+  min-width: 250px;
+  max-width: 500px !important;
+}
+
 footer {
   padding: 15px 0;
   width: 100%;
@@ -100,6 +123,12 @@ footer {
   box-shadow: 8px 8px 10px 10px rgba(0, 0, 0, 0.2);
   font-size: 7px;
   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 960px) {
+  .table-title span {
+    margin-bottom: 5px !important;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -137,7 +166,7 @@ footer {
   }
 
   .content-container {
-    padding: 0px 0px 50px 0px;
+    padding: 0px 10px 50px;
   }
 }
 /* for galaxy fold and etc */
