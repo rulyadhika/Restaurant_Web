@@ -15,6 +15,12 @@ window.addEventListener("load", async function () {
     const data = await getData();
     const sortedData = data.sort((a, b) => a.kota.localeCompare(b.kota));
     displayData(sortedData);
+
+    //adding filter search features
+    const inputSearch = document.querySelector("input[name=input-search]");
+    inputSearch.addEventListener("input", function () {
+      showFilteredData(data, this);
+    });
   } catch (err) {
     console.error(err);
   }
@@ -36,6 +42,12 @@ function displayData(data) {
     )
     .join("");
   tableBody.innerHTML = allData;
+  if (data.length == 0) {
+    tableBody.innerHTML = `<tr>
+    <th scope="row" class="number"></th>
+    <td colspan="3">Mohon maaf outlet kami belum tersedia di kota ini :(</td>
+  </tr>`;
+  }
 }
 
 window.addEventListener("scroll", function () {
@@ -67,3 +79,10 @@ function typeWriter() {
 }
 
 typeWriter();
+
+function showFilteredData(data, el) {
+  const filteredData = data
+    .filter((data) => data.kota.toLowerCase().includes(el.value.toLowerCase()))
+    .map((data) => data);
+  displayData(filteredData);
+}

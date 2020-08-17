@@ -100,18 +100,19 @@
             <div class="input-group">
               <input
                 type="text"
-                class="form-control"
+                class="form-control bg-light text-dark"
+                name="input-search"
                 placeholder="Cari outlet"
                 aria-label="Cari outlet"
                 aria-describedby="button-addon2"
               />
               <div class="input-group-append">
                 <button
-                  class="btn btn-outline-secondary"
+                  class="btn btn-dark search-btn"
                   type="button"
                   id="button-addon2"
                 >
-                  Search
+                  <i class="fas fa-search"></i>
                 </button>
               </div>
             </div>
@@ -121,11 +122,11 @@
           <div class="col table-section">
             <div class="table-responsive">
               <table class="table table-striped text-center">
-                <thead>
+                <thead class="thead-dark">
                   <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Kota</th>
-                    <th scope="col">Alamat</th>
+                    <th scope="col" class="number">#</th>
+                    <th scope="col" class="kota">Kota</th>
+                    <th scope="col" class="alamat">Alamat</th>
                   </tr>
                 </thead>
                 <tbody class="table-body"></tbody>
