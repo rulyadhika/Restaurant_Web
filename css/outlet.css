@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+#carouselSlidesOnly {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#carouselSlidesOnly img {
+  height: 600px;
+  object-fit: cover;
+  filter: brightness(40%);
+}
+
+.navbar-container {
+  max-width: 1440px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.navbar-custom {
+  transition: all 0.3s ease-in-out;
+  position: absolute !important;
+  background: transparent;
+  z-index: 1000;
+  width: 100%;
+}
+
+.navbar-toggle {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: fixed !important;
+  background-color: #ffc107 !important;
+}
+
+.nav-item-wrapper {
+  justify-content: flex-end;
+}
+
+.nav-item-wrapper .navbar-nav a {
+  color: white !important;
+  transition: all 0.2s ease-in-out;
+  padding: 0.5rem 1rem !important;
+  font-size: 15px;
+}
+
+.nav-item-wrapper .navbar-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-5px);
+  border-radius: 20px;
+}
+
+.caption-for-carousel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  color: white;
+  width: fit-content;
+  max-width: 450px;
+  height: fit-content;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid white;
+  letter-spacing: 4px !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.caption-for-carousel:hover {
+  border: 1px solid #ffc107;
+  color: #ffc107;
+}
+
+.content-container {
+  width: 100%;
+  padding: 10px 20px 100px 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 15px 0;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border-top: 5px solid #ffc107;
+  box-shadow: 8px 8px 10px 10px rgba(0, 0, 0, 0.2);
+  font-size: 7px;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-custom {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-custom i {
+    color: white !important;
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+    border: 1px solid white !important;
+  }
+
+  .nav-item-wrapper .navbar-nav a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px !important;
+  }
+
+  .nav-item-wrapper .navbar-nav a:hover {
+    background-color: unset;
+    border-radius: unset;
+  }
+
+  #carouselSlidesOnly img {
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .caption-for-carousel {
+    max-width: 80%;
+  }
+
+  .content-container {
+    padding: 0px 0px 50px 0px;
+  }
+}
+/* for galaxy fold and etc */
+@media only screen and (max-width: 350px) {
+  .navbar-brand span {
+    display: none !important;
+  }
+}
