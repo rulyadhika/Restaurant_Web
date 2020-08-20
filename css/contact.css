@@ -108,6 +108,87 @@
   font-weight: bold;
 }
 
+form {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-radius: 15px;
+  background-color: #ffc107;
+}
+
+form h6 {
+  padding: 15px 10px;
+  margin: 0;
+  color: white;
+}
+
+form .contact-form-box {
+  border-radius: 15px 15px 10px 10px;
+  background-color: white;
+  padding: 20px;
+}
+
+.contact-form-box .input-section {
+  margin-bottom: 10px;
+}
+
+.contact-form-box .input-section label {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.contact-form-box .input-section input,
+.contact-form-box .input-section select {
+  padding-left: 0 !important;
+  border: none;
+  border-bottom: 1px solid rgb(87, 87, 87);
+  transition: all 0.3s ease;
+}
+
+.contact-form-box .input-section input:focus,
+.contact-form-box .input-section select:focus {
+  outline: none;
+  border-bottom: 1px solid #ffc107;
+}
+
+.contact-form-box .input-section textarea {
+  min-height: 100px;
+  max-height: 200px;
+  border-radius: 3px;
+  border: 1px solid rgb(87, 87, 87);
+  transition: all 0.3s ease;
+}
+
+.contact-form-box .input-section textarea:focus {
+  outline: none;
+  border: 1px solid #ffc107;
+}
+
+.contact-form-box .input-section input,
+.contact-form-box .input-section textarea,
+.contact-form-box .input-section select {
+  background-color: transparent;
+  font-size: 14px;
+  width: 100%;
+  padding: 5px;
+}
+
+form .email-agreement {
+  font-size: 10px;
+  font-style: italic;
+}
+
+form .submit-btn {
+  width: 100% !important;
+  background-color: #ffc107 !important;
+  color: white !important;
+  transition: all 0.3s ease;
+}
+
+form .submit-btn:hover {
+  background-color: #ffae17 !important;
+}
+
 footer {
   padding: 15px 0;
   width: 100%;

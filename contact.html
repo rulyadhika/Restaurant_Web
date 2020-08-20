@@ -91,6 +91,38 @@
             </p>
           </div>
         </section>
+        <section class="row form-info-section ">
+          <div class="col-lg-6">
+            <form name="contact-form" method="POST" data-netlify="true" autocomplete="off">
+              <h6>Send Us Message</h6>
+              <div class="contact-form-box">
+                <div class="input-section">
+                  <label for="nama-lengkap">Nama lengkap :</label> <br>
+                  <input type="text" name="nama-lengkap" required>
+                </div>
+                <div class="input-section">
+                  <label for="email">Email :</label> <br>
+                  <input type="email" name="email" required>
+                  <span class="email-agreement"><p>*Kami tidak akan membagikan email ini kepada siapapun</p></span>
+                </div>
+                <div class="input-section">
+                  <label for="subject">Subject :</label> <br>
+                  <select name="subject" id="" required>
+                   <option selected="selected" disabled="disabled" value="">--Plih Subject--</option>
+                    <option value="pertanyaan">Pertanyaan</option>
+                    <option value="kritik & saran">Kritik dan Saran</option>
+                  </select>
+                </div>
+                <div class="input-section">
+                  <label for="pesan">Pesan Kamu :</label> <br>
+                  <textarea name="pesan" id="" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning submit-btn btn-sm">Kirim Pesan</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6"></div>
+        </section>
       </section>
     </div>
     <footer>© 2020-2021 RadhikaProduction • All rights reserved</footer>
