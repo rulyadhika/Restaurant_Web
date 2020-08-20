@@ -189,6 +189,33 @@ form .submit-btn:hover {
   background-color: #ffae17 !important;
 }
 
+.follow-info-box {
+  text-align: center;
+  margin-bottom: 0 !important;
+}
+
+.follow-info-box h4 {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.follow-info-box .sosmed-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.follow-info-box .sosmed-section i {
+  font-size: 30px;
+}
+
+.follow-info-box .sosmed-section a {
+  color: black;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
 footer {
   padding: 15px 0;
   width: 100%;
@@ -199,6 +226,12 @@ footer {
   box-shadow: 8px 8px 10px 10px rgba(0, 0, 0, 0.2);
   font-size: 7px;
   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 992px) {
+  .form-info-section div:first-child {
+    margin-bottom: 50px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
