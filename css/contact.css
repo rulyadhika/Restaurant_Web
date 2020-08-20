@@ -103,9 +103,43 @@
   margin-bottom: 0.2rem;
 }
 
-.content-caption h6 {
+.content-caption h6,
+.company-info h6 {
   font-size: 17px;
   font-weight: bold;
+}
+
+.company-info {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.company-info ul {
+  list-style-type: none;
+  padding: 10px 15px;
+}
+
+.company-info ul li span {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.company-info ul li p {
+  margin-left: 25px;
+  word-wrap: break-word;
+  color: rgb(87, 87, 87);
+}
+
+.company-info .company-images {
+  width: 100%;
+}
+
+.mobile-view {
+  display: none;
+}
+
+.desktop-view {
+  max-width: 400px;
 }
 
 form {
@@ -229,8 +263,29 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
-  .form-info-section div:first-child {
+  .content-container {
+    padding-top: 0 !important;
+  }
+
+  .company-info {
+    margin-bottom: 20px;
+  }
+
+  .company-info ul {
+    padding: 10px;
+  }
+
+  .form-info-section .form-box {
     margin-bottom: 50px;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
+    margin-bottom: 10px;
   }
 }
 
