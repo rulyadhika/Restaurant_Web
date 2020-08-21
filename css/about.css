@@ -133,6 +133,10 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
+  .content-container {
+    padding: 80px 50px 100px;
+  }
+
   .desktop-view {
     display: none;
   }
