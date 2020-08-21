@@ -131,7 +131,15 @@
 }
 
 .main-content {
+  opacity: 0;
+  transform: translateY(80px);
   margin-bottom: 120px;
+  transition: all 1.3s ease;
+}
+
+.fadeIn {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .main-content:last-child {

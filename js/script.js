@@ -45,3 +45,17 @@ function typeWriter() {
 }
 
 typeWriter();
+
+// fade in effect for each section
+window.addEventListener("scroll", function () {
+  let windowBottom = this.pageYOffset + this.innerHeight;
+  let elements = document.querySelectorAll(".row");
+  elements.forEach(function (el) {
+    let objectBottom = el.offsetTop + 50;
+    if (objectBottom < windowBottom) {
+      el.classList.add("fadeIn");
+    } else if (objectBottom - 50 > windowBottom) {
+      el.classList.remove("fadeIn");
+    }
+  });
+});
