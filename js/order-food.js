@@ -9,10 +9,28 @@ function reqData() {
     .then((result) => result);
 }
 
+function reqDataCabang() {
+  return fetch("json/outlet.json")
+    .then((result) => {
+      if (!result.ok) {
+        throw new Error("failed to load data");
+      }
+      return result.json();
+    })
+    .then((result) => result);
+}
+
 window.addEventListener("load", async function () {
   try {
+    //data for food menu
     const data = await reqData();
-    filterData(data);
+    //sort fetched data by name ascending
+    const sortFoodData = data.sort((a, b) => a.nama.localeCompare(b.nama));
+    filterData(sortFoodData);
+
+    //data for outlet info
+    const dataCabang = await reqDataCabang();
+    proceedDataCabang(dataCabang);
   } catch (err) {
     console.error(err);
   }
@@ -104,14 +122,31 @@ function displayData(data) {
             </div>`;
 }
 
+function proceedDataCabang(data) {
+  const sortDataCabang = data.sort((a, b) => a.kota.localeCompare(b.kota));
+  const inputCabang = document.querySelector("select[name=inputCabang]");
+  const dataCabangTemplate = sortDataCabang
+    .map(
+      (data) => `
+  <option value="${data.kota}">${data.kota}</option>
+`
+    )
+    .join("");
+  inputCabang.innerHTML += dataCabangTemplate;
+}
+
+//event binding
 document.addEventListener("click", async function (el) {
   const target = el.target;
   const getFoodData = await reqData();
   const foodId = target.dataset.id;
+  //displaying more detail modal box for mobile devices
   if (target.classList.contains("menu-card-box")) {
     const moreDetailBtnLoc = target.children[1].children[2].children[0];
     moreDetailBtnLoc.click();
-  } else if (target.classList.contains("more-detail-btn")) {
+  }
+  //displaying more detail modal box
+  else if (target.classList.contains("more-detail-btn")) {
     showFoodDetail(target, getFoodData, foodId);
   } else if (target.classList.contains("add-to-cart-btn")) {
     alertPopUp("success", foodId, getFoodData);
@@ -151,7 +186,9 @@ document.addEventListener("click", async function (el) {
     }
   } else if (target.classList.contains("checkout-ready")) {
     proceedCheckout(target);
-  } else if (target.classList.contains("versitile-modal-close-btn")) {
+  }
+  //reloading the page after checkout completed
+  else if (target.classList.contains("versitile-modal-close-btn")) {
     setTimeout(() => {
       window.location.reload(false);
     }, 1500);
@@ -424,10 +461,10 @@ function addCustomerData() {
   customerDataBox.children[1].innerHTML = `Nama : ${inputNama.value}`;
   customerDataBox.children[2].innerHTML = `Email : ${inputEmail.value}`;
   customerDataBox.children[3].innerHTML = `Nomor Hp : ${inputNomerHp.value}`;
-  customerDataBox.children[4].innerHTML = `Lokasi Cabang : ${
+  customerDataBox.children[4].innerHTML = `Alamat Tujuan : ${textAreaAlamat.value}`;
+  customerDataBox.children[5].innerHTML = `Lokasi Cabang : ${
     selectCabang.options[selectCabang.selectedIndex].value
   }`;
-  customerDataBox.children[5].innerHTML = `Alamat Tujuan : ${textAreaAlamat.value}`;
   let checkoutBtn = document.querySelector(".checkout-btn");
   checkoutBtn.removeAttribute("data-toggle");
   checkoutBtn.removeAttribute("data-target");

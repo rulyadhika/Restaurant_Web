@@ -128,16 +128,13 @@
 }
 
 .content-caption {
-  margin: 0 auto;
-  padding: 20px 0px 30px 0px !important;
+  padding: 20px 15px 30px;
   text-align: center;
 }
 
-.content-caption span {
-  font-weight: bold;
-  margin-bottom: 10px;
-  display: inline-block;
+.content-caption h6 {
   font-size: 17px;
+  font-weight: bold;
 }
 
 .main-row {
@@ -545,11 +542,7 @@ footer {
   }
 
   .content-container {
-    padding: 0px 0px 50px 0px;
-  }
-
-  .content-caption {
-    padding: 20px 30px 20px 30px !important;
+    padding: 0px 10px 50px;
   }
 
   .menu-main-box {
