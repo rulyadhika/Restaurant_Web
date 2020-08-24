@@ -17,6 +17,14 @@ window.addEventListener("load", async function () {
     console.error(err);
   }
   typeWriter();
+
+  //scroll animation
+  setTimeout(() => {
+    window.scrollTo({
+      top: document.querySelector(".content-container").offsetTop - 50,
+      behavior: "smooth",
+    });
+  }, 1000);
 });
 
 window.addEventListener("scroll", function () {

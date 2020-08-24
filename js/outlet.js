@@ -24,6 +24,14 @@ window.addEventListener("load", async function () {
   } catch (err) {
     console.error(err);
   }
+
+  //scroll animation
+  setTimeout(() => {
+    window.scrollTo({
+      top: document.querySelector(".content-container").offsetTop - 50,
+      behavior: "smooth",
+    });
+  }, 1000);
 });
 
 function displayData(data) {
