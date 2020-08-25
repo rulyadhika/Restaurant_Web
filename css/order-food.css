@@ -229,6 +229,11 @@
   font-weight: bold;
 }
 
+.picture-info {
+  word-break: break-all;
+  font-size: 10px;
+}
+
 .descForLessThan768px {
   display: none;
 }

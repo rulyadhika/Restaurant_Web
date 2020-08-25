@@ -101,7 +101,7 @@ function displayData(data) {
                         <ul>
                             <li><span class="priceTitle">Harga : </span>Rp. ${
                               data.harga
-                            }</li>
+                            }/paket</li>
                             <li class="descForMoreThan768px">${
                               data.deskripsi.length > 100
                                 ? `${data.deskripsi.substring(0, 97) + "..."}`
@@ -205,13 +205,15 @@ function showFoodDetail(loc, data, id) {
     .map(
       (data) => `<div class="container">
                   <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                       <img src="${data.gambar}" alt="" class="img-fluid">
+                      <p class="picture-info">Picture By (<a href="https://www.masakapaya.com/">https://www.masakapaya.com/</a>)</p>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-lg-8">
                         <ul class="list-group list-group-flush">
                           <li class="list-group-item"><span class="customTitle">${data.nama}</span></li>
                           <li class="list-group-item"><span class="customTitle">Harga : </span>Rp. ${data.harga}</li>
+                          <li class="list-group-item"><span class="customTitle">Jumlah : </span>${data.pcs} pcs/paket</li>
                           <li class="list-group-item"><span class="customTitle">Deskripsi Makanan : </span> <br/> ${data.deskripsi}</li>
                         </ul>
                     </div>

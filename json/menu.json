@@ -5,15 +5,17 @@
     "kategori": "makanan-pembuka",
     "deskripsi": "Jajanan sandwich dengan isian yang cukup lengkap, yaitu daging giling ayam, kentang, wortel, seledri yang dibalut dengan campuran butter, susu, dan sambal, yang menjadikanya memiliki rasa manis, asin, pedas yang sangat nikmat.",
     "gambar": "images/menu-pict/makanan-pembuka/Sandwich-Goreng-isi-Ragout.jpg",
-    "id": "aptz-1"
+    "id": "aptz-1",
+    "pcs": "5"
   },
   {
     "nama": "Bakwan Udang Saos Mayonaise",
-    "harga": 12000,
+    "harga": 10000,
     "kategori": "makanan-pembuka",
     "deskripsi": "Jajanan bakwan dengan isian udang dan sayur - sayuran kol, wortel, dan kucai, dengan saos mayonaise pedas. ",
     "gambar": "images/menu-pict/makanan-pembuka/Bakwan-Udang-Saos-Mayonaise.jpg",
-    "id": "aptz-2"
+    "id": "aptz-2",
+    "pcs": "5"
   },
   {
     "nama": "Pastel Indomie",
@@ -21,7 +23,8 @@
     "kategori": "makanan-pembuka",
     "deskripsi": "Jajanan pastel yang tampil berbeda dari biasanya dengan isian Indomie Goreng Aceh dengan campuran daging sapi dan sayuran wortel.",
     "gambar": "images/menu-pict/makanan-pembuka/Pastel-Indomie.jpg",
-    "id": "aptz-3"
+    "id": "aptz-3",
+    "pcs": "5"
   },
   {
     "nama": "Chitato BBQ Skutel",
@@ -29,7 +32,8 @@
     "kategori": "makanan-pembuka",
     "deskripsi": "Jajanan chitato dengan paduan smoked beef, bawang bombay, sayuran bayam yang tenggelam didalam kuah susu dan keju cheddar, yang bikin meleleh dan nikmat.",
     "gambar": "images/menu-pict/makanan-pembuka/Chitato-Skutel.jpg",
-    "id": "aptz-4"
+    "id": "aptz-4",
+    "pcs": "1"
   },
   {
     "nama": "Mi Goreng Sosis Balut Telur",
@@ -37,7 +41,8 @@
     "kategori": "makanan-pembuka",
     "deskripsi": "Jajanan sederhana namun nikmat dengan isian sosis yang dibalut dengan indomie ayam bawang yang dicampur dengan telur ayam, wortel, mayonaise dan saus sambal.",
     "gambar": "images/menu-pict/makanan-pembuka/Mi-Goreng-Sosis-Balut-Telur.jpg",
-    "id": "aptz-5"
+    "id": "aptz-5",
+    "pcs": "4"
   },
   {
     "nama": "Keripik Kentang Saus Bolognese",
@@ -45,7 +50,8 @@
     "kategori": "makanan-pembuka",
     "deskripsi": "Makanan kripik kentang Lays yang diselimuti dengan saus bolognese dengan isian daging sapi giling, pasta tomat, dan keju parut.",
     "gambar": "images/menu-pict/makanan-pembuka/Keripik-Kentang-Saus-Bolognese.jpg",
-    "id": "aptz-6"
+    "id": "aptz-6",
+    "pcs": "1"
   },
   {
     "nama": "Lumpia Semarang",
@@ -53,7 +59,8 @@
     "kategori": "makanan-pembuka",
     "deskripsi": "Jajan khas Kota Semarang dengan isian daging giling ayam dan udang dan dilengkapi dengan sayuran taoge, serta memiliki aroma khas dari rebung segar. ",
     "gambar": "images/menu-pict/makanan-pembuka/lumpia-semarang.jpg",
-    "id": "aptz-7"
+    "id": "aptz-7",
+    "pcs": "5"
   },
   {
     "nama": "Kroket Isi Wortel Jeruk",
@@ -61,7 +68,8 @@
     "kategori": "makanan-pembuka",
     "deskripsi": "Jajan kroket dengan isian kentang,jagung manis,wortel yang dibalut dengan susu, butter, dan sirup orange yang memberikan cita rasa khas yang nikmat dan berbeda.",
     "gambar": "images/menu-pict/makanan-pembuka/Kroket-Isi-Wortel-Jeruk.jpg",
-    "id": "aptz-8"
+    "id": "aptz-8",
+    "pcs": "5"
   },
   {
     "nama": "Mi Godog Jawa",
@@ -69,7 +77,8 @@
     "kategori": "makanan-pembuka",
     "deskripsi": "Masakan khas daerah Pulau Jawa, dengan campuran daging ayam dan sapi, dilengkapi dengan berbagai macam sayuran yang dibalut dengan sedikit kuah rasa pedas asam yang khas. ",
     "gambar": "images/menu-pict/makanan-pembuka/Mi-Godog-Jawa.jpg",
-    "id": "aptz-9"
+    "id": "aptz-9",
+    "pcs": "1"
   },
   {
     "nama": "Sayur Betik Khas Jepara",
@@ -77,7 +86,8 @@
     "kategori": "makanan-pembuka",
     "deskripsi": "Masakan khas dari Kota Jepara, dengan campuran tetelan daging sapi dan pepaya muda, dengan campuran rempah - rempah yang menghasilkan cita rasa yang nikmat. ",
     "gambar": "images/menu-pict/makanan-pembuka/sayur-betik.jpg",
-    "id": "aptz-10"
+    "id": "aptz-10",
+    "pcs": "1"
   },
   {
     "nama": "Rendang",
@@ -85,7 +95,8 @@
     "kategori": "makanan-utama",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
-    "id": "mm-1"
+    "id": "mm-1",
+    "pcs": ""
   },
   {
     "nama": "Bistik",
@@ -93,7 +104,8 @@
     "kategori": "makanan-utama",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
-    "id": "mm-2"
+    "id": "mm-2",
+    "pcs": ""
   },
   {
     "nama": "Satai Kambing",
@@ -101,7 +113,8 @@
     "kategori": "makanan-utama",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
-    "id": "mm-3"
+    "id": "mm-3",
+    "pcs": ""
   },
   {
     "nama": "Shriaptz",
@@ -109,7 +122,8 @@
     "kategori": "makanan-utama",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
-    "id": "mm-4"
+    "id": "mm-4",
+    "pcs": ""
   },
   {
     "nama": "Strawberry Cake",
@@ -117,7 +131,8 @@
     "kategori": "makanan-penutup",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
-    "id": "dsrt-1"
+    "id": "dsrt-1",
+    "pcs": ""
   },
   {
     "nama": "Ice Cream",
@@ -125,7 +140,8 @@
     "kategori": "makanan-penutup",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
-    "id": "dsrt-2"
+    "id": "dsrt-2",
+    "pcs": ""
   },
   {
     "nama": "Black Forest Cake",
@@ -133,7 +149,8 @@
     "kategori": "makanan-penutup",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
-    "id": "dsrt-3"
+    "id": "dsrt-3",
+    "pcs": ""
   },
   {
     "nama": "Gulai",
@@ -141,6 +158,7 @@
     "kategori": "makanan-utama",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
-    "id": "mm-5"
+    "id": "mm-5",
+    "pcs": ""
   }
 ]
