@@ -1,27 +1,83 @@
 [
   {
-    "nama": "Mendoan",
-    "harga": 25000,
+    "nama": "Sandwich Goreng Isi Rogut",
+    "harga": 15000,
     "kategori": "makanan-pembuka",
-    "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
-    "gambar": "images/1.jpg",
+    "deskripsi": "Jajanan sandwich dengan isian yang cukup lengkap, yaitu daging giling ayam, kentang, wortel, seledri yang dibalut dengan campuran butter, susu, dan sambal, yang menjadikanya memiliki rasa manis, asin, pedas yang sangat nikmat.",
+    "gambar": "images/menu-pict/makanan-pembuka/Sandwich-Goreng-isi-Ragout.jpg",
     "id": "aptz-1"
   },
   {
-    "nama": "Gorengan yahut",
-    "harga": 23000,
+    "nama": "Bakwan Udang Saos Mayonaise",
+    "harga": 12000,
     "kategori": "makanan-pembuka",
-    "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
-    "gambar": "images/1.jpg",
+    "deskripsi": "Jajanan bakwan dengan isian udang dan sayur - sayuran kol, wortel, dan kucai, dengan saos mayonaise pedas. ",
+    "gambar": "images/menu-pict/makanan-pembuka/Bakwan-Udang-Saos-Mayonaise.jpg",
     "id": "aptz-2"
   },
   {
-    "nama": "Risol",
-    "harga": 21000,
+    "nama": "Pastel Indomie",
+    "harga": 12000,
     "kategori": "makanan-pembuka",
-    "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
-    "gambar": "images/1.jpg",
+    "deskripsi": "Jajanan pastel yang tampil berbeda dari biasanya dengan isian Indomie Goreng Aceh dengan campuran daging sapi dan sayuran wortel.",
+    "gambar": "images/menu-pict/makanan-pembuka/Pastel-Indomie.jpg",
     "id": "aptz-3"
+  },
+  {
+    "nama": "Chitato BBQ Skutel",
+    "harga": 20000,
+    "kategori": "makanan-pembuka",
+    "deskripsi": "Jajanan chitato dengan paduan smoked beef, bawang bombay, sayuran bayam yang tenggelam didalam kuah susu dan keju cheddar, yang bikin meleleh dan nikmat.",
+    "gambar": "images/menu-pict/makanan-pembuka/Chitato-Skutel.jpg",
+    "id": "aptz-4"
+  },
+  {
+    "nama": "Mi Goreng Sosis Balut Telur",
+    "harga": 8000,
+    "kategori": "makanan-pembuka",
+    "deskripsi": "Jajanan sederhana namun nikmat dengan isian sosis yang dibalut dengan indomie ayam bawang yang dicampur dengan telur ayam, wortel, mayonaise dan saus sambal.",
+    "gambar": "images/menu-pict/makanan-pembuka/Mi-Goreng-Sosis-Balut-Telur.jpg",
+    "id": "aptz-5"
+  },
+  {
+    "nama": "Keripik Kentang Saus Bolognese",
+    "harga": 18000,
+    "kategori": "makanan-pembuka",
+    "deskripsi": "Makanan kripik kentang Lays yang diselimuti dengan saus bolognese dengan isian daging sapi giling, pasta tomat, dan keju parut.",
+    "gambar": "images/menu-pict/makanan-pembuka/Keripik-Kentang-Saus-Bolognese.jpg",
+    "id": "aptz-6"
+  },
+  {
+    "nama": "Lumpia Semarang",
+    "harga": 15000,
+    "kategori": "makanan-pembuka",
+    "deskripsi": "Jajan khas Kota Semarang dengan isian daging giling ayam dan udang dan dilengkapi dengan sayuran taoge, serta memiliki aroma khas dari rebung segar. ",
+    "gambar": "images/menu-pict/makanan-pembuka/lumpia-semarang.jpg",
+    "id": "aptz-7"
+  },
+  {
+    "nama": "Kroket Isi Wortel Jeruk",
+    "harga": 10000,
+    "kategori": "makanan-pembuka",
+    "deskripsi": "Jajan kroket dengan isian kentang,jagung manis,wortel yang dibalut dengan susu, butter, dan sirup orange yang memberikan cita rasa khas yang nikmat dan berbeda.",
+    "gambar": "images/menu-pict/makanan-pembuka/Kroket-Isi-Wortel-Jeruk.jpg",
+    "id": "aptz-8"
+  },
+  {
+    "nama": "Mi Godog Jawa",
+    "harga": 10000,
+    "kategori": "makanan-pembuka",
+    "deskripsi": "Masakan khas daerah Pulau Jawa, dengan campuran daging ayam dan sapi, dilengkapi dengan berbagai macam sayuran yang dibalut dengan sedikit kuah rasa pedas asam yang khas. ",
+    "gambar": "images/menu-pict/makanan-pembuka/Mi-Godog-Jawa.jpg",
+    "id": "aptz-9"
+  },
+  {
+    "nama": "Sayur Betik Khas Jepara",
+    "harga": 10000,
+    "kategori": "makanan-pembuka",
+    "deskripsi": "Masakan khas dari Kota Jepara, dengan campuran tetelan daging sapi dan pepaya muda, dengan campuran rempah - rempah yang menghasilkan cita rasa yang nikmat. ",
+    "gambar": "images/menu-pict/makanan-pembuka/sayur-betik.jpg",
+    "id": "aptz-10"
   },
   {
     "nama": "Rendang",

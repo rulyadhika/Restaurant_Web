@@ -93,14 +93,18 @@ function displayData(data) {
                 <div class="card my-2 menu-card-box">
                   <img src="${data.gambar}" class="card-img-top" alt="...">
                     <div class="card-body menu-card-info">
-                        <h5 class="card-title">${data.nama}</h5>
+                        <h5 class="card-title">${
+                          data.nama.length > 17
+                            ? `${data.nama.substring(0, 17) + "..."}`
+                            : `${data.nama}`
+                        }</h5>
                         <ul>
                             <li><span class="priceTitle">Harga : </span>Rp. ${
                               data.harga
                             }</li>
                             <li class="descForMoreThan768px">${
-                              data.deskripsi.length > 120
-                                ? `${data.deskripsi.substring(0, 117) + "..."}`
+                              data.deskripsi.length > 100
+                                ? `${data.deskripsi.substring(0, 97) + "..."}`
                                 : `${data.deskripsi}`
                             }</li>
                             <li class="descForLessThan768px">${
@@ -234,7 +238,11 @@ async function addToCart(id, loc) {
         <img src="${data.gambar}" alt="...">
         <div class="card-body menu-card-info-for-cart">
           <ul>
-            <li><span class="customTitle">${data.nama}</span> (1 paket)</li>
+            <li><span class="customTitle">${
+              data.nama.length > 17
+                ? `${data.nama.substring(0, 15) + "..."}`
+                : `${data.nama}`
+            }</span> (1 paket)</li>
             <li>Harga : Rp. ${data.harga}</li>
           </ul>
           <ul>
