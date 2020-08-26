@@ -198,30 +198,57 @@
     "pcs": "1"
   },
   {
-    "nama": "Strawberry Cake",
-    "harga": 15000,
+    "nama": "Alpukat Kerok",
+    "harga": 12000,
     "kategori": "makanan-penutup",
-    "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
-    "gambar": "images/menu-pict/makanan-penutup/",
+    "deskripsi": "Hidangan ini sangat cocok sebagai alternatif menikmati alpukat, yang dipadukan dengan coklat dan es krim vanilla chips.",
+    "gambar": "images/menu-pict/makanan-penutup/Alpukat-Kerok.jpg",
     "id": "dsrt-1",
-    "pcs": ""
+    "pcs": "3"
   },
   {
-    "nama": "Ice Cream",
-    "harga": 15000,
+    "nama": "Banana Split",
+    "harga": 12000,
     "kategori": "makanan-penutup",
-    "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
-    "gambar": "images/1.jpg",
+    "deskripsi": "Hidangan pisang yang dikombinasikan dengan es krim, whipped cream, dan ditaburi dengan biskuit inti gandung dan diselimuti saus caramel.",
+    "gambar": "images/menu-pict/makanan-penutup/Banana-Split.jpg",
     "id": "dsrt-2",
-    "pcs": ""
+    "pcs": "2"
   },
   {
     "nama": "Black Forest Cake",
     "harga": 15000,
     "kategori": "makanan-penutup",
-    "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
-    "gambar": "images/1.jpg",
+    "deskripsi": "Cake rasa coklat dengan tekstur yang lembut dan lembab dengan taburan coklat padat dan whipped cream.",
+    "gambar": "images/menu-pict/makanan-penutup/Black-Forest.jpg",
     "id": "dsrt-3",
-    "pcs": ""
+    "pcs": "2"
+  },
+  {
+    "nama": "Eclairs Isi Moka",
+    "harga": 15000,
+    "kategori": "makanan-penutup",
+    "deskripsi": "Eclairs merupakan kue sus dengan bentuk yang panjang, yang diisi dengan whipped cream rasa kopi dan ditaburi dengan coklat bubuk sebagai pelengkap.",
+    "gambar": "images/menu-pict/makanan-penutup/Eclairs-Isi-Moka.jpg",
+    "id": "dsrt-4",
+    "pcs": "3"
+  },
+  {
+    "nama": "Chocolate Mousse",
+    "harga": 12000,
+    "kategori": "makanan-penutup",
+    "deskripsi": "Hidangan citra rasa coklat pekat nan lembut dengan isian whipping cream, chiki balls cokelat, dan agar-agar yang sangat nikmat.",
+    "gambar": "images/menu-pict/makanan-penutup/Chocolate-Mousse.jpg",
+    "id": "dsrt-5",
+    "pcs": "2"
+  },
+  {
+    "nama": "Klapertart Durian",
+    "harga": 20000,
+    "kategori": "makanan-penutup",
+    "deskripsi": "Klapertart Durian merupakan hidangan khas Kota Manado dengan isian daging kelapa muda, dan durian yang ditaburi dengan kacang almond dan keju cheddar.",
+    "gambar": "images/menu-pict/makanan-penutup/Klapertart-Durian.jpg",
+    "id": "dsrt-6",
+    "pcs": "1"
   }
 ]
