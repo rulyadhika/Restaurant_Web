@@ -617,7 +617,7 @@ footer {
 }
 
 /* for galaxy fold and etc */
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 410px) {
   .menu-card-box img {
     width: 80px;
     height: 80px;

@@ -57,7 +57,7 @@
     "nama": "Lumpia Semarang",
     "harga": 15000,
     "kategori": "makanan-pembuka",
-    "deskripsi": "Jajan khas Kota Semarang dengan isian daging giling ayam dan udang dan dilengkapi dengan sayuran taoge, serta memiliki aroma khas dari rebung segar. ",
+    "deskripsi": "Jajanan khas Kota Semarang dengan isian daging giling ayam dan udang dan dilengkapi dengan sayuran taoge, serta memiliki aroma khas dari rebung segar. ",
     "gambar": "images/menu-pict/makanan-pembuka/lumpia-semarang.jpg",
     "id": "aptz-7",
     "pcs": "5"
@@ -66,71 +66,143 @@
     "nama": "Kroket Isi Wortel Jeruk",
     "harga": 10000,
     "kategori": "makanan-pembuka",
-    "deskripsi": "Jajan kroket dengan isian kentang,jagung manis,wortel yang dibalut dengan susu, butter, dan sirup orange yang memberikan cita rasa khas yang nikmat dan berbeda.",
+    "deskripsi": "Jajanan kroket dengan isian kentang,jagung manis,wortel yang dibalut dengan susu, butter, dan sirup orange yang memberikan cita rasa khas yang nikmat dan berbeda.",
     "gambar": "images/menu-pict/makanan-pembuka/Kroket-Isi-Wortel-Jeruk.jpg",
     "id": "aptz-8",
     "pcs": "5"
   },
   {
+    "nama": "Nugget Seafood",
+    "harga": 15000,
+    "kategori": "makanan-pembuka",
+    "deskripsi": "Jajanan nugget dengan isian ikan kakap fillet dan udang cincang yang dibalut dengan paduan susu, keju cheddar, dan mayonnaise yang nikmat.",
+    "gambar": "images/menu-pict/makanan-pembuka/Nugget-Seafood.jpg",
+    "id": "aptz-9",
+    "pcs": "5"
+  },
+  {
+    "nama": "Ayam Kentaki Saos Lemon",
+    "harga": 13000,
+    "kategori": "makanan-utama",
+    "deskripsi": "Ayam krispi yang dipadukan dengan sesuatu yang berbeda, yaitu dengan saus lemon madu yang segar dan memiliki cita rasa manis, asam dan krispi yang sangat nikmat.",
+    "gambar": "images/menu-pict/makanan-utama/Ayam-Saos-Lemon.jpg",
+    "id": "mm-1",
+    "pcs": "2"
+  },
+  {
+    "nama": "Bola Daging Krim Jamur",
+    "harga": 20000,
+    "kategori": "makanan-utama",
+    "deskripsi": "Bola - bola daging sapi giling yang dipanggang dan diselimuti oleh keju parmesan, peteseli, krim kental, mustard, dan spagetti yang sangat nikmaat.",
+    "gambar": "images/menu-pict/makanan-utama/Bola-Daging-Krim-Jamur.jpg",
+    "id": "mm-2",
+    "pcs": "4"
+  },
+  {
+    "nama": "Kari Ayam Susu",
+    "harga": 13000,
+    "kategori": "makanan-utama",
+    "deskripsi": "Kari ayam yang satu ini istimewa, karena menggunakan susu dan dipadukan dengan berbagai rempah yang menghasilkan cita rasa sedikit berbeda namun tak kalah lezat.",
+    "gambar": "images/menu-pict/makanan-utama/Kari-Ayam-Susu.jpg",
+    "id": "mm-3",
+    "pcs": "2"
+  },
+  {
+    "nama": "Mie Aceh",
+    "harga": 10000,
+    "kategori": "makanan-utama",
+    "deskripsi": "Masakan khas Kota Aceh dengan isian utama mie tebal yang dipadukan dengan potongan daging sapi dan udang, serta berbagai sayur - sayuran yang diselimuti kuah dengan rempah - rempah yang lengkap.",
+    "gambar": "images/menu-pict/makanan-utama/Mie Aceh.jpg",
+    "id": "mm-4",
+    "pcs": "1"
+  },
+  {
     "nama": "Mi Godog Jawa",
     "harga": 10000,
-    "kategori": "makanan-pembuka",
+    "kategori": "makanan-utama",
     "deskripsi": "Masakan khas daerah Pulau Jawa, dengan campuran daging ayam dan sapi, dilengkapi dengan berbagai macam sayuran yang dibalut dengan sedikit kuah rasa pedas asam yang khas. ",
-    "gambar": "images/menu-pict/makanan-pembuka/Mi-Godog-Jawa.jpg",
-    "id": "aptz-9",
+    "gambar": "images/menu-pict/makanan-utama/Mi-Godog-Jawa.jpg",
+    "id": "mm-5",
     "pcs": "1"
   },
   {
     "nama": "Sayur Betik Khas Jepara",
     "harga": 10000,
-    "kategori": "makanan-pembuka",
+    "kategori": "makanan-utama",
     "deskripsi": "Masakan khas dari Kota Jepara, dengan campuran tetelan daging sapi dan pepaya muda, dengan campuran rempah - rempah yang menghasilkan cita rasa yang nikmat. ",
-    "gambar": "images/menu-pict/makanan-pembuka/sayur-betik.jpg",
-    "id": "aptz-10",
+    "gambar": "images/menu-pict/makanan-utama/sayur-betik.jpg",
+    "id": "mm-6",
     "pcs": "1"
   },
   {
-    "nama": "Rendang",
-    "harga": 22000,
+    "nama": "Nasi Goreng Jamur, Sapi Balado",
+    "harga": 12000,
     "kategori": "makanan-utama",
-    "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
-    "gambar": "images/1.jpg",
-    "id": "mm-1",
-    "pcs": ""
+    "deskripsi": "Nasi goreng istimewa dengan isian yang lengkap, yaitu potongan jamur kancing, dan irisan dagung sapi, yang ditaburi dengan berbagai sayuran.",
+    "gambar": "images/menu-pict/makanan-utama/Nasgor-Daging.jpg",
+    "id": "mm-7",
+    "pcs": "1"
   },
   {
-    "nama": "Bistik",
-    "harga": 20000,
+    "nama": "Nasi Panggang Ayam Krispi",
+    "harga": 18000,
     "kategori": "makanan-utama",
-    "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
-    "gambar": "images/1.jpg",
-    "id": "mm-2",
-    "pcs": ""
+    "deskripsi": "Nasi panggang dengan bumbu rempah yang ditemani dengan ayam fillet krispi dan berbagai sayuran yang ditaburi dengan daging asap dan mayonnaise.",
+    "gambar": "images/menu-pict/makanan-utama/Nasi-Panggang-Ayam-Krispi.jpg",
+    "id": "mm-8",
+    "pcs": "2"
   },
   {
-    "nama": "Satai Kambing",
-    "harga": 25000,
+    "nama": "Sayap Ayam Madu Mozarella",
+    "harga": 18000,
     "kategori": "makanan-utama",
-    "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
-    "gambar": "images/1.jpg",
-    "id": "mm-3",
-    "pcs": ""
+    "deskripsi": "Sayap ayam yang dipanggang sempurna yang menghasilkan tekstur daging yang empuk dan diselimuti dengan keju mozarella, madu, lemon, dan bebagai rempah - rempah, yang menciptakan cita rasa yang sempurna.",
+    "gambar": "images/menu-pict/makanan-utama/Sayap-Ayam-Madu-Mozarella.jpg",
+    "id": "mm-9",
+    "pcs": "2"
   },
   {
-    "nama": "Shriaptz",
+    "nama": "Shabu - Shabu",
     "harga": 15000,
     "kategori": "makanan-utama",
-    "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
-    "gambar": "images/1.jpg",
-    "id": "mm-4",
-    "pcs": ""
+    "deskripsi": "Shabu - shabu merupakan makanan khas Negara Jepang, dengan isian potongan ayam, bawang bombay, sawi, bakso, udon, jamur enoki, lobak, dan berbagai rempah - rempah dengan kuah kaldu yang gurih dan nikmat.",
+    "gambar": "images/menu-pict/makanan-utama/Shabu-Shabu.jpg",
+    "id": "mm-10",
+    "pcs": "1"
+  },
+  {
+    "nama": "Sop Ikan Ala Batam",
+    "harga": 14000,
+    "kategori": "makanan-utama",
+    "deskripsi": "Sop ikan khas Batam dengan bahan utama ikan kakap yang ditemani dengan rasa kuahnya yang unik, yaitu dari ikan teri dan ebi yang digoreng terlebih dahulu lalu dihaluskan yang menghasilkan cita rasa gurih dan nikmat.",
+    "gambar": "images/menu-pict/makanan-utama/Sop-Ikan-Ala-Batam.jpg",
+    "id": "mm-11",
+    "pcs": "1"
+  },
+  {
+    "nama": "Soto Betawi",
+    "harga": 11000,
+    "kategori": "makanan-utama",
+    "deskripsi": "Soto ini merupakan soto khas Betawi, dengan isian daging sapi dan beberapa sayur - sayuran yang ditemani dengan kuah yang diracik dengan bumbu dan rempah yang sangat lengkap sehingga menghasilkan rasa yang sangat nikmat.",
+    "gambar": "images/menu-pict/makanan-utama/Soto-Betawi.jpg",
+    "id": "mm-12",
+    "pcs": "1"
+  },
+  {
+    "nama": "Tongseng Sapi",
+    "harga": 11000,
+    "kategori": "makanan-utama",
+    "deskripsi": "Tongseng daging sapi yang dipadukan dengan kuah kental dan penuh akan rempah - rempah yang menghasilkan perpaduan yang sangat cocok dan nikmat.",
+    "gambar": "images/menu-pict/makanan-utama/Tongseng-Sapi.jpg",
+    "id": "mm-13",
+    "pcs": "1"
   },
   {
     "nama": "Strawberry Cake",
     "harga": 15000,
     "kategori": "makanan-penutup",
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
-    "gambar": "images/1.jpg",
+    "gambar": "images/menu-pict/makanan-penutup/",
     "id": "dsrt-1",
     "pcs": ""
   },
@@ -150,15 +222,6 @@
     "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
     "gambar": "images/1.jpg",
     "id": "dsrt-3",
-    "pcs": ""
-  },
-  {
-    "nama": "Gulai",
-    "harga": 25000,
-    "kategori": "makanan-utama",
-    "deskripsi": "lLorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, in molestias totam atque nesciunt. Temporibus, labore! Delectus quisquam ex aperiam soluta dolor doloribus magnam? Dolore, dolores provident ut ex quibusdam sapiente nulla suscipit quos officia tempora odit expedita quia commodi odio harum rem quasi eius dolorem ea praesentium temporibus?",
-    "gambar": "images/1.jpg",
-    "id": "mm-5",
     "pcs": ""
   }
 ]
