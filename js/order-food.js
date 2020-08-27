@@ -77,6 +77,7 @@ function filterData(data) {
   const makananPembukaBox = document.querySelector(".makanan-pembuka-box");
   const makananUtamaBox = document.querySelector(".makanan-utama-box");
   const makananPenutupBox = document.querySelector(".makanan-penutup-box");
+  const minumanBox = document.querySelector(".minuman-box");
   data.forEach((data) => {
     if (data.kategori == "makanan-pembuka") {
       makananPembukaBox.innerHTML += displayData(data);
@@ -84,6 +85,8 @@ function filterData(data) {
       makananUtamaBox.innerHTML += displayData(data);
     } else if (data.kategori == "makanan-penutup") {
       makananPenutupBox.innerHTML += displayData(data);
+    } else if (data.kategori == "minuman") {
+      minumanBox.innerHTML += displayData(data);
     }
   });
 }
@@ -163,12 +166,15 @@ document.addEventListener("click", async function (el) {
     const makananPenutupCartBox = document.querySelector(
       ".makanan-penutup-cart-box"
     );
+    const minumanCartBox = document.querySelector(".minuman-cart-box");
     if (foodId.includes("aptz")) {
       cekData(foodId, makananPembukaCartBox);
     } else if (foodId.includes("mm")) {
       cekData(foodId, makananUtamaCartBox);
     } else if (foodId.includes("dsrt")) {
       cekData(foodId, makananPenutupCartBox);
+    } else if (foodId.includes("bvrgs")) {
+      cekData(foodId, minumanCartBox);
     }
   } else if (target.classList.contains("minBtn")) {
     foodCounter(target, foodId, "min");

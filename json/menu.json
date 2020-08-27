@@ -250,5 +250,59 @@
     "gambar": "images/menu-pict/makanan-penutup/Klapertart-Durian.jpg",
     "id": "dsrt-6",
     "pcs": "1"
+  },
+  {
+    "nama": "Choco Ice Blended",
+    "harga": 9000,
+    "kategori": "minuman",
+    "deskripsi": "Minuman ice blend rasa coklat yang dipadukan dengan chocolate chip dan es krim vanilla, bertopping stroberi.",
+    "gambar": "images/menu-pict/minuman/Choco-Ice-Blended.jpg",
+    "id": "bvrgs-1",
+    "pcs": "1"
+  },
+  {
+    "nama": "Es Buah",
+    "harga": 8000,
+    "kategori": "minuman",
+    "deskripsi": "Minuman favorit di musim panas ini, dengan isian buah - buahan yang lengkap dan bervariasi yang berpadu dengan sirup rasa leci yang segar.",
+    "gambar": "images/menu-pict/minuman/Es-Buah.jpg",
+    "id": "bvrgs-2",
+    "pcs": "1"
+  },
+  {
+    "nama": "Ice Boba Lychee Tea",
+    "harga": 10000,
+    "kategori": "minuman",
+    "deskripsi": "Minuman milk tea full cream dengan variasi sirup leci, ditemani dengan isian boba/pearl.",
+    "gambar": "images/menu-pict/minuman/Es-Teh-Boba.jpg",
+    "id": "bvrgs-3",
+    "pcs": "1"
+  },
+  {
+    "nama": "Es Teh Longan",
+    "harga": 5000,
+    "kategori": "minuman",
+    "deskripsi": "Minuman teh dengan perpaduan buah longan dan biji selasih yang sangat segar dan nikmat.",
+    "gambar": "images/menu-pict/minuman/Es-Teh-Longan.jpg",
+    "id": "bvrgs-4",
+    "pcs": "1"
+  },
+  {
+    "nama": "Mango Juice",
+    "harga": 9000,
+    "kategori": "minuman",
+    "deskripsi": "Minuman berbahan buah mangga segar dengan krim kental, sirup gula, dan whipped cream dengan rasa yang juara.",
+    "gambar": "images/menu-pict/minuman/Mango-Juice.jpg",
+    "id": "bvrgs-5",
+    "pcs": "1"
+  },
+  {
+    "nama": "Matcha Milkshake",
+    "harga": 10000,
+    "kategori": "minuman",
+    "deskripsi": "Minuman matcha/teh hijau yang dipadukan dengan susu fullcream dan whipped cream dengan topping es krim vanilla, dan biskuit marie",
+    "gambar": "images/menu-pict/minuman/Matcha-Milkshake.jpg",
+    "id": "bvrgs-6",
+    "pcs": "1"
   }
 ]
