@@ -1,17 +1,182 @@
 [
   {
     "kota": "Purwokerto",
-    "alamat": "Jl. Raya Mayjen Sungkono No.KM 5, Dusun 2, Blater, Kec. Kalimanah, Kabupaten Purbalingga, Jawa Tengah 53371",
-    "telp": "+622816596700"
+    "alamat": "Jl. Masjid No.125, Purwokerto, Sokanegara, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53115",
+    "telp": "+622216296220"
   },
   {
     "kota": "Cilacap",
-    "alamat": "Jl. Wuni No.816, Kandang Macan, Tegalreja, Kec. Cilacap Sel., Kabupaten Cilacap, Jawa Tengah 53211",
-    "telp": "+6282241148983"
+    "alamat": "Jl. Wuni No.919, Kandang Macan, Tegalreja, Kec. Cilacap Sel., Kabupaten Cilacap, Jawa Tengah 53211",
+    "telp": "+6281221138923"
   },
   {
     "kota": "Tegal",
-    "alamat": "Jl. KH Wahid Hasyim, Mangkukusuman, Kec. Tegal Tim., Kota Tegal, Jawa Tengah 52131",
-    "telp": "+62283351131"
+    "alamat": "Jl. KH Wahid Hasyim No.111, Mangkukusuman, Kec. Tegal Tim., Kota Tegal, Jawa Tengah 52131",
+    "telp": "+62243451431"
+  },
+  {
+    "kota": "Purbalingga",
+    "alamat": "Jl. Jend. Sudirman No.582, Purbalingga Wetan, Kec. Purbalingga, Kabupaten Purbalingga, Jawa Tengah 53317",
+    "telp": "+62883111131"
+  },
+  {
+    "kota": "Semarang Cab.1",
+    "alamat": "Jl. Gaharu Raya No.554, Srondol Wetan, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50263",
+    "telp": "+62823122134"
+  },
+  {
+    "kota": "Semarang Cab.2",
+    "alamat": "Jl. Pleburan Barat No.38A, Pleburan, Kec. Semarang Sel., Kota Semarang, Jawa Tengah 50241",
+    "telp": "+62873166171"
+  },
+  {
+    "kota": "Magelang",
+    "alamat": "Jl. Tentara Pelajar No.998, Cacaban, Kec. Magelang Tengah, Kota Magelang, Jawa Tengah 56121",
+    "telp": "+62882314231"
+  },
+  {
+    "kota": "Yogyakarta Cab.1",
+    "alamat": "Jl. Kusumanegara No.551, Muja Muju, Kec. Umbulharjo, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55165",
+    "telp": "+62884124122"
+  },
+  {
+    "kota": "Yogyakarta Cab.2",
+    "alamat": "Jl. Ring Road Utara No.852, Jombor Lor, Sinduadi, Kec. Mlati, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55284",
+    "telp": "+62125353521"
+  },
+  {
+    "kota": "Serang",
+    "alamat": "Jl.Ahmad Yani Lingkungan No.761, RT.Pekojoan Rt. 01/RW.21, Sumurpecung, Kec. Serang, Kota Serang, Banten 42118",
+    "telp": "+62123712388"
+  },
+  {
+    "kota": "Tanggerang",
+    "alamat": "Jl. Satria - Sudirman No.877, RT.02/RW.014, Tanah Tinggi, Kec. Tangerang, Kota Tangerang, Banten 15119",
+    "telp": "+62812371962"
+  },
+  {
+    "kota": "Tanggerang Selatan",
+    "alamat": "Jl. Rajawali I No.1591, Pd. Pucung, Kec. Pd. Aren, Kota Tangerang Selatan, Banten 15229",
+    "telp": "+62912389121"
+  },
+  {
+    "kota": "Depok",
+    "alamat": "Jl. Raya Sawangan No.927, Pancoran MAS, Kec. Pancoran Mas, Kota Depok, Jawa Barat 16436",
+    "telp": "+62812370921"
+  },
+  {
+    "kota": "Jakarta Pusat",
+    "alamat": "Jl. Kebon Sirih No.721, RT.3/RW.2, Raya, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340",
+    "telp": "+62118237127"
+  },
+  {
+    "kota": "Jakarta Utara",
+    "alamat": "Jl. Puspa Gading No.227, RT.8/RW.16, Pegangsaan Dua, Kec. Klp. Gading, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14250",
+    "telp": "+62897123792"
+  },
+  {
+    "kota": "Jakarta Timur",
+    "alamat": "Jl. Bambu Duri VII No.992, RT.3/RW.9, Pd. Bambu, Kec. Duren Sawit, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13430",
+    "telp": "+62091249182"
+  },
+  {
+    "kota": "Jakarta Barat",
+    "alamat": "Blok AA2 No, Jl. Taman Ratu Raya Indah No.975, RT.24/RW.7, Kedoya Utara, Kec. Kb. Jeruk, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11520",
+    "telp": "+62982379812"
+  },
+  {
+    "kota": "Jakarta Selatan",
+    "alamat": "Jl. Kemang Raya No.995BZ, RT.9/RW.1, Bangka, Kec. Mampang Prpt., Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12730",
+    "telp": "+62218723123"
+  },
+  {
+    "kota": "Bekasi",
+    "alamat": "Jalan RA Kartini KAV No.922, Margahayu, Bekasi Timur, Bekasi City, West Java 17113",
+    "telp": "+62981237782"
+  },
+  {
+    "kota": "Bogor",
+    "alamat": "Jl. Pajajaran Indah V No.997, Baranangsiang, Kec. Bogor Tim., Kota Bogor, Jawa Barat 16143",
+    "telp": "+62892357123"
+  },
+  {
+    "kota": "Sukabumi",
+    "alamat": "Jl. Cikole Dalam No.924, Cikole, Kec. Cikole, Kota Sukabumi, Jawa Barat 43113",
+    "telp": "+62812378722"
+  },
+  {
+    "kota": "Purwakarta",
+    "alamat": "Jl. Taman Pahlawan No.922, Purwamekar, Kec. Purwakarta, Kabupaten Purwakarta, Jawa Barat 41119",
+    "telp": "+62901246512"
+  },
+  {
+    "kota": "Bandung Cab.1",
+    "alamat": "Jl. Balonggede No.951, Balonggede, Kec. Regol, Kota Bandung, Jawa Barat 40251",
+    "telp": "+62918239712"
+  },
+  {
+    "kota": "Bandung Cab.2",
+    "alamat": "Jl. Dr. Setiabudi No.969, Gegerkalong, Kec. Sukasari, Kota Bandung, Jawa Barat 40153",
+    "telp": "+62892739126"
+  },
+  {
+    "kota": "Tasikmalaya",
+    "alamat": "Jl. KHZ. Mustofa No.995, Kahuripan, Kec. Cihideung, Tasikmalaya, Jawa Barat 46126",
+    "telp": "+62092387123"
+  },
+  {
+    "kota": "Indramayu",
+    "alamat": "Jl. Soekarno Hatta No.521, Pekandangan, Kec. Indramayu, Kabupaten Indramayu, Jawa Barat 45216",
+    "telp": "+62109236127"
+  },
+  {
+    "kota": "Cirebon",
+    "alamat": "Jl. Sunyaragi No.912, Sunyaragi, Kec. Kesambi, Kota Cirebon, Jawa Barat 45132",
+    "telp": "+62892357123"
+  },
+  {
+    "kota": "Pemalang",
+    "alamat": "Jl. Jend. A. Yani No.622, Kebondalem, Mulyoharjo, Kec. Pemalang, Kabupaten Pemalang, Jawa Tengah 52312",
+    "telp": "+62812387120"
+  },
+  {
+    "kota": "Pekalongan",
+    "alamat": "Jl. Hayam Wuruk No.791, Kauman, Kec. Pekalongan Tim., Kota Pekalongan, Jawa Tengah 51127",
+    "telp": "+62901238718"
+  },
+  {
+    "kota": "Magetan",
+    "alamat": "Jl. Manggis No.767, Dusun Onggoprayan, Kepolorejo, Kec. Magetan, Kabupaten Magetan, Jawa Timur 63311",
+    "telp": "+62912371238"
+  },
+  {
+    "kota": "Surabaya Cab.1",
+    "alamat": "Jl. Kapasan No.627, Kapasan, Kec. Simokerto, Kota SBY, Jawa Timur 60141",
+    "telp": "+621293870162"
+  },
+  {
+    "kota": "Surabaya Cab.2",
+    "alamat": "Jl. Kayoon No.654, Embong Kaliasin, Kec. Genteng, Kota SBY, Jawa Timur 60271",
+    "telp": "+628123019723"
+  },
+  {
+    "kota": "Malang",
+    "alamat": "Jalan WR. Supratman C1 Kav. 87 - 88, Rampal Celaket, Kec. Klojen, Kota Malang, Jawa Timur 65111",
+    "telp": "+621242348712"
+  },
+  {
+    "kota": "Kediri",
+    "alamat": "Jl. Super Semar No.B737, Ngronggo, Kec. Kota Kediri, Kota Kediri, Jawa Timur 64127",
+    "telp": "+629289364234"
+  },
+  {
+    "kota": "Solo Cab.1",
+    "alamat": "Jl. Gatot Subroto No.885, Kratonan, Kec. Serengan, Kota Surakarta, Jawa Tengah 57153",
+    "telp": "+629012379255"
+  },
+  {
+    "kota": "Solo Cab.2",
+    "alamat": "Jl. Ki Mangun Sarkoro No.762, Sumber, Banjarsari, Banyuanyar, Sumber, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57137",
+    "telp": "+629812370235"
   }
 ]

@@ -442,14 +442,31 @@ form i {
   margin-bottom: 10px;
 }
 
-.agreementBox span {
+.agreementBox {
+  margin: 0;
+}
+
+.agreementBox span,
+.redirect-outlet-page {
   font-size: 10px;
   margin-left: 5px;
   width: 90%;
+  font-style: italic;
+}
+
+.agreementBox span::after {
+  content: "*";
+  color: red;
+  font-size: 12px;
+}
+
+.redirect-outlet-page {
+  margin: 0 0 0 auto;
+  font-style: unset;
 }
 
 .agreementBox input {
-  margin-bottom: unset;
+  margin: auto 0;
 }
 
 .completeBox {
